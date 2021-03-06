@@ -144,7 +144,7 @@ unset fail2_ban && fail2_ban=$(dpkg -l | grep fail2ban | grep ii)
 [[ "$(ps x | grep "ultimatebot" | grep -v "grep")" != "" ]] && bot="$_on" || bot="$_off"
 [[ -e /etc/bash.bashrc-bakup ]] && _autorun="$_on" || _autorun="$_off"
 [[ ! -e /etc/adm-lite/versao_script ]] && echo 1 > /etc/adm-lite/versao_script
-P_SERVER="https://raw.githubusercontent.com/AAAAAEXQOSyIpN2JZ0ehUQ/PROYECTOS_DESCONTINUADOS/master/ADM-MANAGER-ALPHA/Install"
+P_SERVER="https://raw.githubusercontent.com/AAAAAEXQOSyIpN2JZ0ehUQ/ADM-MANAGER-ALPHA/main/Install"
 v1=$(curl -sSL "${P_SERVER}/versaoatt")
 v2=$(cat /etc/adm-lite/versao_script)
 if [ -e /etc/squid/squid.conf ]; then
@@ -392,7 +392,7 @@ apt-get install gawk -y > /dev/null 2>&1
 rm $_dr && rm $_idioma
 rm /etc/texto-adm > /dev/null 2>&1
 cd /etc/adm-lite
-wget https://raw.githubusercontent.com/AAAAAEXQOSyIpN2JZ0ehUQ/PROYECTOS_DESCONTINUADOS/master/ADM-MANAGER-ALPHA/Idioma/$1/idioma
+wget https://raw.githubusercontent.com/AAAAAEXQOSyIpN2JZ0ehUQ/ADM-MANAGER-ALPHA/main/Idioma/$1/idioma
 unset txt
 touch $HOME/fim
 exit 0

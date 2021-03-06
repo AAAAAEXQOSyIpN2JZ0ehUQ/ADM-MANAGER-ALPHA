@@ -39,7 +39,7 @@ done
   for _pids_ in `atq | awk '{print $1}'`; do
    atrm $_pids_
   done
-  P_SERVER="https://raw.githubusercontent.com/AAAAAEXQOSyIpN2JZ0ehUQ/PROYECTOS_DESCONTINUADOS/master/ADM-MANAGER-ALPHA"
+  P_SERVER="https://raw.githubusercontent.com/AAAAAEXQOSyIpN2JZ0ehUQ/ADM-MANAGER-ALPHA/main/Install"
   v1=$(curl -sSL "${P_SERVER}/versaoatt")
   echo "$v1" > /etc/adm-lite/versao_script
   [[ -e /etc/adm-lite/vencidos ]] && rm /etc/adm-lite/vencidos
@@ -53,7 +53,7 @@ echo -e "${cor[1]} =================================== ${cor[0]}"
 
 #VERIFICACAO
 verificarkey_fun () {
-      wget -O lista https://raw.githubusercontent.com/AAAAAEXQOSyIpN2JZ0ehUQ/PROYECTOS_DESCONTINUADOS/master/ADM-MANAGER-ALPHA/Install/lista -o /dev/null
+      wget -O lista https://raw.githubusercontent.com/AAAAAEXQOSyIpN2JZ0ehUQ/ADM-MANAGER-ALPHA/main/Install/lista -o /dev/null
                [[ "$(cat $HOME/lista | grep $link_list/${key[1]})" != "" ]] && atualiza_fun || {
                [[ -e $HOME/lista ]] && rm $HOME/lista
                echo -e "${cor[1]} ================================== ${cor[0]}"

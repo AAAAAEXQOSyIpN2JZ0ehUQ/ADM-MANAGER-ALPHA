@@ -431,7 +431,7 @@ function_9 () {
 echo -e "${cor[1]} =================================== ${cor[0]}"
 echo -e "${cor[4]} ${txt[184]}"
 echo -e "${cor[1]} =================================== ${cor[0]}"
-link_bin="https://raw.githubusercontent.com/AAAAAEXQOSyIpN2JZ0ehUQ/PROYECTOS_DESCONTINUADOS/master/ADM-MANAGER-ALPHA/Install/speedtest"
+link_bin="https://raw.githubusercontent.com/AAAAAEXQOSyIpN2JZ0ehUQ/ADM-MANAGER-ALPHA/main/Install/speedtest"
 [[ ! -e /bin/speedtest ]] && wget -O /bin/speedtest ${link_bin} > /dev/null 2>&1 && chmod +x /bin/speedtest
 ##apt-get install python3 -y > /dev/null 2>&1
 apt-get install python-pip -y > /dev/null 2>&1
