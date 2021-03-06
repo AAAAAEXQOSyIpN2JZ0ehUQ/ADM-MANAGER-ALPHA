@@ -1,5 +1,4 @@
-﻿# ADM-MANAGER-ULTIMATE (VERSAO: ALPHA)
-# UPDATE 03/01/2021
+﻿# ADM-MANAGER-ALPHA
 
 ![logo](https://github.com/AAAAAEXQOSyIpN2JZ0ehUQ/PROYECTOS_DESCONTINUADOS/blob/master/ADM-MANAGER-ALPHA/Imagenes/ADM_MANAGER_ULTIMATE.jpg)
 
@@ -10,10 +9,10 @@
 
 ## :heavy_exclamation_mark: Requerimientos
 
-* Un sistema operativo basado en Linux (Ubuntu o Debian) 
-* Recomendamos Ubuntu 14.04 Server x86_64 / Ubuntu 16.04 Server x86_64
-* Tambien puede funcionar en algunas versiones de  Debian Server x86_64
+* Un sistema operativo basado en Linux (Ubuntu o Debian)
+* Recomendamos Ubuntu 14.04 Server x86_64 
 * Se recomienda usar una distro nueva o formatiada
+* Soporta Ubuntu 16 y 18 pero su mejor estabilidad es Ubuntu 14.04 Server x86_64 
 
 ## Installation
 
