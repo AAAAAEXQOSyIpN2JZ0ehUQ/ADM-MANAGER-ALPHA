@@ -1,12 +1,9 @@
-﻿# ADM-MANAGER-ULTIMATE (VERSAO: ALPHA)
-# UPDATE 03/01/2021
+﻿# ADM-MANAGER-ULTIMATE (VERSION: ALPHA)
+* UPDATE 03/01/2021
 
 ![logo](https://github.com/AAAAAEXQOSyIpN2JZ0ehUQ/ADM-MANAGER-ALPHA/blob/main/Imagenes/ADM_MANAGER_ULTIMATE.jpg)
 
--------------------------------------------------------------------------------
-
 **Manager Script**
-
 
 ## :heavy_exclamation_mark: Requerimientos
 
@@ -20,6 +17,12 @@
 apt-get update -y; apt-get upgrade -y; wget https://raw.githubusercontent.com/AAAAAEXQOSyIpN2JZ0ehUQ/ADM-MANAGER-ALPHA/main/instala.sh; chmod 777 instala.sh* && ./instala.sh*
 
 -------------------------------------------------------------------------------
+
+## :scroll: Registro de cambios
+
+**VERSION: ALPHA**
+
+https://raw.githubusercontent.com/AAAAAEXQOSyIpN2JZ0ehUQ/ADM-MANAGER-ALPHA/main/Install/versaoatt
 
 ```
 * SIN MINERIA! 
