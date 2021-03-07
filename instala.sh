@@ -34,6 +34,12 @@ function_verify () {
   echo "verify" > $(echo -e $(echo 2f62696e2f766572696679737973|sed 's/../\\x&/g;s/$/ /'))
 }
 
+function_versaoatt () {
+apt-get install curl -y > /dev/null 2>&1
+v1=$(curl -sSL "https://raw.githubusercontent.com/AAAAAEXQOSyIpN2JZ0ehUQ/ADM-MANAGER-ALPHA/main/Install/versaoatt")
+echo "$v1" > /etc/adm-lite/versao_script
+echo > /usr/bin/adm-ultimate && chmod +x /usr/bin/adm-ultimate
+}
 elimined_fun () {
 text=$(source trans -b pt:${id} "Instalando")
 echo -e "${cor[2]} Update"
@@ -64,11 +70,8 @@ echo "cd /etc/adm-lite && bash ./menu" > /bin/adm && chmod +x /bin/adm
 echo "cd /etc/adm-lite && bash ./menu" > /bin/h && chmod +x /bin/h
 cd /etc/adm-lite
 touch /etc/adm-lite/index.html
-apt-get install curl -y > /dev/null 2>&1
-v1=$(curl -sSL "https://raw.githubusercontent.com/AAAAAEXQOSyIpN2JZ0ehUQ/ADM-MANAGER-ALPHA/main/Install/versaoatt")
-echo "$v1" > /etc/adm-lite/versao_script
+function_versaoatt
 wget -i $HOME/lista -o /dev/null
-echo > /usr/bin/adm-ultimate && chmod +x /usr/bin/adm-ultimate
 echo -e "${cor[3]} $(source trans -b pt:${id} "Agora Sera Instalado As Dependencias")"
 echo -e "$barra"
 cd /etc/adm-lite
