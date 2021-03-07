@@ -392,7 +392,7 @@ apt-get install gawk -y > /dev/null 2>&1
 rm $_dr && rm $_idioma
 rm /etc/texto-adm > /dev/null 2>&1
 cd /etc/adm-lite
-wget https://raw.githubusercontent.com/AAAAAEXQOSyIpN2JZ0ehUQ/ADM-MANAGER-ALPHA/main/Idioma/$1/idioma
+wget https://raw.githubusercontent.com/AAAAAEXQOSyIpN2JZ0ehUQ/ADM-MANAGER-ALPHA/main/Install/Idioma/$1/idioma
 unset txt
 touch $HOME/fim
 exit 0
