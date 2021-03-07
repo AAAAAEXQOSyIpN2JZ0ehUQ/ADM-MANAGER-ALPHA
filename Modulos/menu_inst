@@ -1077,10 +1077,7 @@ read -p " Enter";;
 9)
 telegran_bot
 read -p " Enter";;
-108)
-block_torrent
-read -p " Enter";;
-118)
+10)
 painel_upload
 read -p " Enter";;
 esac
