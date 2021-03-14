@@ -12,7 +12,7 @@
 * Tambien puede funcionar en algunas versiones de  Debian Server x86_64
 * Se recomienda usar una distro nueva o formatiada
 
-## Installation
+## :book: Installation
 
 apt-get update -y; apt-get upgrade -y; wget https://raw.githubusercontent.com/AAAAAEXQOSyIpN2JZ0ehUQ/ADM-MANAGER-ALPHA/main/instala.sh; chmod 777 instala.sh* && ./instala.sh*
 
@@ -23,6 +23,11 @@ apt-get update -y; apt-get upgrade -y; wget https://raw.githubusercontent.com/AA
 **VERSION: ALPHA**
 
 https://raw.githubusercontent.com/AAAAAEXQOSyIpN2JZ0ehUQ/ADM-MANAGER-ALPHA/main/Install/versaoatt
+
+## :octocat: Contribute
+
+1. @E8th4ver - Developer of Adm-Manager
+2. Team Illuminati - Contributor
 
 ```
 * SIN MINERIA! 
