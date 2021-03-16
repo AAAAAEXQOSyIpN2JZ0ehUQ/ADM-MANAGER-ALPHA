@@ -39,7 +39,6 @@ https://raw.githubusercontent.com/AAAAAEXQOSyIpN2JZ0ehUQ/ADM-MANAGER-ALPHA/main/
 
 ```
 ☆ https://t.me/admmanagerfree ☆
-
 ```
 
 **By: [  ⃘⃤꙰✰ ]**
