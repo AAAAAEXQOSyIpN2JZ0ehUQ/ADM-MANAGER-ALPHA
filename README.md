@@ -1,5 +1,7 @@
 ﻿# ADM-MANAGER-ULTIMATE (VERSION: ALPHA)
-* UPDATE 03/01/2021
+```
+* UPDATE 25/03/2021 - Proyecto Finalizado
+```
 
 ![logo](https://github.com/AAAAAEXQOSyIpN2JZ0ehUQ/ADM-MANAGER-ALPHA/blob/main/Imagenes/ADM_MANAGER_ULTIMATE.jpg)
 
