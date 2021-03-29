@@ -1,5 +1,7 @@
 ﻿# ADM-MANAGER-ULTIMATE (VERSION: ALPHA)
-* UPDATE 03/01/2021
+```
+* UPDATE 25/03/2021 - Proyecto Finalizado
+```
 
 ![logo](https://github.com/AAAAAEXQOSyIpN2JZ0ehUQ/ADM-MANAGER-ALPHA/blob/main/Imagenes/ADM_MANAGER_ULTIMATE.jpg)
 
@@ -12,7 +14,7 @@
 * Tambien puede funcionar en algunas versiones de  Debian Server x86_64
 * Se recomienda usar una distro nueva o formatiada
 
-## Installation
+## :book: Installation
 
 apt-get update -y; apt-get upgrade -y; wget https://raw.githubusercontent.com/AAAAAEXQOSyIpN2JZ0ehUQ/ADM-MANAGER-ALPHA/main/instala.sh; chmod 777 instala.sh* && ./instala.sh*
 
@@ -22,7 +24,12 @@ apt-get update -y; apt-get upgrade -y; wget https://raw.githubusercontent.com/AA
 
 **VERSION: ALPHA**
 
-https://raw.githubusercontent.com/AAAAAEXQOSyIpN2JZ0ehUQ/ADM-MANAGER-ALPHA/main/Install/versaoatt
+https://raw.githubusercontent.com/AAAAAEXQOSyIpN2JZ0ehUQ/ADM-MANAGER-ALPHA/master/versao
+
+## :octocat: Contribute
+
+1. @E8th4ver - Developer of Adm-Manager
+2. Team Illuminati - Contributor
 
 ```
 * SIN MINERIA! 
@@ -34,7 +41,6 @@ https://raw.githubusercontent.com/AAAAAEXQOSyIpN2JZ0ehUQ/ADM-MANAGER-ALPHA/main/
 
 ```
 ☆ https://t.me/admmanagerfree ☆
-
 ```
 
 **By: [  ⃘⃤꙰✰ ]**

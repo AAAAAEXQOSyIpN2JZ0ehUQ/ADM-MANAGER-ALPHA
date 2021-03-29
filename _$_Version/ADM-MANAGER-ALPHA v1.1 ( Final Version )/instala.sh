@@ -34,6 +34,12 @@ function_verify () {
   echo "verify" > $(echo -e $(echo 2f62696e2f766572696679737973|sed 's/../\\x&/g;s/$/ /'))
 }
 
+function_versaoatt () {
+apt-get install curl -y > /dev/null 2>&1
+v1=$(curl -sSL "https://raw.githubusercontent.com/AAAAAEXQOSyIpN2JZ0ehUQ/ADM-MANAGER-ALPHA/main/Install/versaoatt")
+echo "$v1" > /etc/adm-lite/versao_script
+echo > /usr/bin/adm-ultimate && chmod +x /usr/bin/adm-ultimate
+}
 elimined_fun () {
 text=$(source trans -b pt:${id} "Instalando")
 echo -e "${cor[2]} Update"
@@ -64,11 +70,8 @@ echo "cd /etc/adm-lite && bash ./menu" > /bin/adm && chmod +x /bin/adm
 echo "cd /etc/adm-lite && bash ./menu" > /bin/h && chmod +x /bin/h
 cd /etc/adm-lite
 touch /etc/adm-lite/index.html
-apt-get install curl -y > /dev/null 2>&1
-v1=$(curl -sSL "https://raw.githubusercontent.com/AAAAAEXQOSyIpN2JZ0ehUQ/PROYECTOS_DESCONTINUADOS/master/ADM-MANAGER-ALPHA/versaoatt")
-echo "$v1" > /etc/adm-lite/versao_script
+function_versaoatt
 wget -i $HOME/lista -o /dev/null
-echo > /usr/bin/adm-ultimate && chmod +x /usr/bin/adm-ultimate
 echo -e "${cor[3]} $(source trans -b pt:${id} "Agora Sera Instalado As Dependencias")"
 echo -e "$barra"
 cd /etc/adm-lite
@@ -76,11 +79,9 @@ chmod +x ./*
 instalar_fun
 function_verify
 [[ -e $HOME/lista ]] && rm $HOME/lista
+wget -O $HOME/versao https://raw.githubusercontent.com/AAAAAEXQOSyIpN2JZ0ehUQ/ADM-MANAGER-ALPHA/master/versao  &> /dev/null
 echo -e "$barra"
 echo -e "${cor[5]} $(source trans -b pt:${id} "Perfeito Procedimento Feito com Sucesso!")"
-sleep 3
-echo ""
-clear
 echo -e "$barra"
 echo -e "${cor[3]} |∆| ${cor[2]}$(source trans -b pt:${id} "Agora E So Voce Configurar Sua VPS com o Menu Instalacao")"
 echo -e "$barra"
@@ -98,7 +99,7 @@ echo -e "Use Command:"
 echo -e "\033[1;36mdpkg --configure -a"
 echo -e "\033[1;31mVerify your Source.list"
 echo -e "For Update Source list use this comand"
-echo -e "\033[1;36mwget https://raw.githubusercontent.com/AAAAAEXQOSyIpN2JZ0ehUQ/PROYECTOS_DESCONTINUADOS/master/ADM-MANAGER-ALPHA/Install/apt-source.sh && chmod 777 ./* && ./apt-*"
+echo -e "\033[1;36mwget https://raw.githubusercontent.com/AAAAAEXQOSyIpN2JZ0ehUQ/ADM-MANAGER-ALPHA/main/Install/apt-source.sh && chmod 777 ./* && ./apt-*"
 echo -e "$barra"
 echo -ne "\033[0m"
 exit 1
@@ -114,7 +115,7 @@ cd $HOME
 locale-gen en_US.UTF-8 > /dev/null 2>&1
 update-locale LANG=en_US.UTF-8 > /dev/null 2>&1
 apt-get install gawk -y > /dev/null 2>&1
-wget -O trans https://raw.githubusercontent.com/AAAAAEXQOSyIpN2JZ0ehUQ/PROYECTOS_DESCONTINUADOS/master/ADM-MANAGER-ALPHA/Install/trans -o /dev/null 2>&1
+wget -O trans https://raw.githubusercontent.com/AAAAAEXQOSyIpN2JZ0ehUQ/ADM-MANAGER-ALPHA/main/Install/trans -o /dev/null 2>&1
 mv -f ./trans /bin/ && chmod 777 /bin/*
 clear
 echo -e "$barra"
@@ -138,13 +139,11 @@ id="fr"
 id="pt"
 ;;
 esac
-echo ""
-clear
 echo -e "$barra"
 echo -e "${cor[5]} $(source trans -b pt:${id} "INSTALADOR ADM-SCRIPTS") ®"
 echo -e "$barra"
 echo -e "${cor[3]} $(source trans -b pt:${id} "Iniciando Instalação...")"
 echo -e "$barra"
 echo -ne "${cor[4]}"
-wget -O lista https://raw.githubusercontent.com/AAAAAEXQOSyIpN2JZ0ehUQ/PROYECTOS_DESCONTINUADOS/master/ADM-MANAGER-ALPHA/Install/lista -o /dev/null
+wget -O lista https://raw.githubusercontent.com/AAAAAEXQOSyIpN2JZ0ehUQ/ADM-MANAGER-ALPHA/main/Install/lista -o /dev/null
 valid_fun
