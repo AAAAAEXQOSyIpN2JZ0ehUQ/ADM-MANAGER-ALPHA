@@ -1,4 +1,4 @@
-﻿# ADM-MANAGER-ULTIMATE (VERSION: ALPHA)
+﻿# ADM-MANAGER-ULTIMATE
 ```
 * UPDATE 25/03/2021 - Proyecto Finalizado
 ```
