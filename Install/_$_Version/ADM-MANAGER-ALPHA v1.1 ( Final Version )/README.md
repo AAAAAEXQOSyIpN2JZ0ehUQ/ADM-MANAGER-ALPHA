@@ -1,9 +1,9 @@
-﻿# ADM-MANAGER-ULTIMATE (VERSION: ALPHA)
+﻿# ADM-MANAGER-ULTIMATE
 ```
 * UPDATE 25/03/2021 - Proyecto Finalizado
 ```
 
-![logo](https://github.com/AAAAAEXQOSyIpN2JZ0ehUQ/ADM-MANAGER-ALPHA/blob/main/Imagenes/ADM_MANAGER_ULTIMATE.jpg)
+![logo](https://github.com/AAAAAEXQOSyIpN2JZ0ehUQ/ADM-MANAGER-ALPHA/blob/main/Imagenes/ADM_MANAGER_ULTIMATE.png)
 
 **Manager Script**
 
@@ -29,7 +29,7 @@ https://raw.githubusercontent.com/AAAAAEXQOSyIpN2JZ0ehUQ/ADM-MANAGER-ALPHA/maste
 ## :octocat: Contribute
 
 1. @E8th4ver - Developer of Adm-Manager
-2. Team Illuminati - Contributor
+2. Team Illuminati - Contributor Update
 
 ```
 * SIN MINERIA! 

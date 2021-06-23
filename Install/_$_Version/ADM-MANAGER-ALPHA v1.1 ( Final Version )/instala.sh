@@ -26,20 +26,6 @@ done
 echo -e "\033[1;33m]\033[1;31m -\033[1;32m 100%\033[1;37m"
 }
 
-instalar_fun () {
-cd /etc/adm-lite && bash cabecalho --instalar
-}
-
-function_verify () {
-  echo "verify" > $(echo -e $(echo 2f62696e2f766572696679737973|sed 's/../\\x&/g;s/$/ /'))
-}
-
-function_versaoatt () {
-apt-get install curl -y > /dev/null 2>&1
-v1=$(curl -sSL "https://raw.githubusercontent.com/AAAAAEXQOSyIpN2JZ0ehUQ/ADM-MANAGER-ALPHA/main/Install/versaoatt")
-echo "$v1" > /etc/adm-lite/versao_script
-echo > /usr/bin/adm-ultimate && chmod +x /usr/bin/adm-ultimate
-}
 elimined_fun () {
 text=$(source trans -b pt:${id} "Instalando")
 echo -e "${cor[2]} Update"
@@ -59,6 +45,35 @@ fun_bar 'apt-get install lynx' 'apt-get install curl'
 sed -i "s;Listen 80;Listen 81;g" /etc/apache2/ports.conf
 service apache2 restart > /dev/null 2>&1
 echo -e "$barra"
+}
+
+function_versaoatt () {
+apt-get install curl -y > /dev/null 2>&1
+v1=$(curl -sSL "https://raw.githubusercontent.com/AAAAAEXQOSyIpN2JZ0ehUQ/ADM-MANAGER-ALPHA/main/Install/versaoatt")
+echo "$v1" > /etc/adm-lite/versao_script
+echo > /usr/bin/adm-ultimate && chmod +x /usr/bin/adm-ultimate
+}
+
+instalar_fun () {
+cd /etc/adm-lite && bash cabecalho --instalar
+}
+
+function_verify () {
+  echo "verify" > $(echo -e $(echo 2f62696e2f766572696679737973|sed 's/../\\x&/g;s/$/ /'))
+}
+
+error_fun () {
+echo -e "$barra"
+echo -e "\033[1;31mYour apt-get Error!"
+echo -e "Reboot the System!"
+echo -e "Use Command:"
+echo -e "\033[1;36mdpkg --configure -a"
+echo -e "\033[1;31mVerify your Source.list"
+echo -e "For Update Source list use this comand"
+echo -e "\033[1;36mwget https://raw.githubusercontent.com/AAAAAEXQOSyIpN2JZ0ehUQ/ADM-MANAGER-ALPHA/main/Install/apt-source.sh && chmod 777 ./* && ./apt-*"
+echo -e "$barra"
+echo -ne "\033[0m"
+exit 1
 }
 
 valid_fun () {
@@ -89,20 +104,6 @@ echo -e "${cor[2]} $(source trans -b pt:${id} "Use os Comandos"): menu, adm"
 echo -e "${cor[2]} $(source trans -b pt:${id} "e acesse o script, um bom uso!")"
 echo -e "$barra"
 echo -ne " \033[0m"
-}
-
-error_fun () {
-echo -e "$barra"
-echo -e "\033[1;31mYour apt-get Error!"
-echo -e "Reboot the System!"
-echo -e "Use Command:"
-echo -e "\033[1;36mdpkg --configure -a"
-echo -e "\033[1;31mVerify your Source.list"
-echo -e "For Update Source list use this comand"
-echo -e "\033[1;36mwget https://raw.githubusercontent.com/AAAAAEXQOSyIpN2JZ0ehUQ/ADM-MANAGER-ALPHA/main/Install/apt-source.sh && chmod 777 ./* && ./apt-*"
-echo -e "$barra"
-echo -ne "\033[0m"
-exit 1
 }
 
 rm $(pwd)/$0

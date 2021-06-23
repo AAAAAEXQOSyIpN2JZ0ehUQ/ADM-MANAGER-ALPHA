@@ -121,8 +121,7 @@ fun_ip
 echo -ne " $(fun_trans "Confirme seu ip")"; read -p ": " -e -i $IP ip
 echo -e "$barra"
 echo -e "\033[1;31m $(fun_trans "Agora Escolha as Portas que Deseja No Squid")"
-echo -e "\033[1;31m $(fun_trans "Escolha As Portas Em Ordem Sequencial")"
-echo -e "\033[1;31m $(fun_trans "Exemplo:")\033[1;32m 80 8080 8799 3128 \033[1;37m"
+echo -e "\033[1;31m $(fun_trans "Escolha As Portas Em Ordem Sequencial Exemplo:")\033[1;32m 80 8080 8799 3128 \033[1;37m"
 echo -e "$barra"
 echo -ne "\033[1;31m $(fun_trans "Digite a Porta"): \033[1;37m" && read DPORT
 tput cuu1 && tput dl1
@@ -280,7 +279,6 @@ done
 rm /tmp/portz
 }
 
-#INSTALADOR DROPBEAR
 fun_dropbear () {
  [[ -e /etc/default/dropbear ]] && {
  echo -e "$barra\n\033[1;32m $(fun_trans "REMOVENDO DROPBEAR")\n$barra"
@@ -291,8 +289,7 @@ fun_dropbear () {
  return 0
  }
 echo -e "$barra\n\033[1;32m $(fun_trans "INSTALADOR DROPBEAR ADM-ULTIMATE")\n$barra"
-echo -e "\033[1;31m $(fun_trans "Selecione Portas Validas em Ordem Sequencial:")"
-echo -e "\033[1;31m $(fun_trans "Exemplo:")\033[1;32m 22 80 81 82 85 90\033[1;37m"
+echo -e "\033[1;31m $(fun_trans "Selecione Portas Validas em Ordem Sequencial:")\033[1;32m 22 80 81 82 85 90\033[1;37m"
 echo -e "$barra"
 echo -ne "\033[1;31m $(fun_trans "Digite a Porta"): \033[1;37m" && read DPORT
 tput cuu1 && tput dl1
@@ -415,7 +412,6 @@ done
 rm /tmp/portz
 }
 
-#INSTALADOR OPENVPN
 instala_ovpn () {
 parametros_iniciais () {
 #Verifica o Sistema
@@ -766,60 +762,6 @@ echo -e "\033[1;33m $(fun_trans "Prosseguir Com Instalacao?")\n$barra"
 read -p " [S/N]: " -e -i n instnosquid && [[ $instnosquid = @(s|S|y|Y) ]] && instala_ovpn || return 1
 }
 
-#INSTALADOR SSL STUNNEL
-ssl_stunel () {
-[[ $(mportas|grep stunnel4|head -1) ]] && {
-echo -e "$barra"
-echo -e "\033[1;33m $(fun_trans "Parando Stunnel")"
-echo -e "$barra"
-fun_bar "apt-get purge stunnel4 -y"
-echo -e "$barra"
-echo -e "\033[1;33m $(fun_trans "Parado Com Sucesso!")"
-echo -e "$barra"
-return 0
-}
-echo -e "$barra"
-echo -e "\033[1;36m $(fun_trans "SSL Stunnel")"
-echo -e "$barra"
-echo -e "\033[1;33m $(fun_trans "Selecione Uma Porta De Redirecionamento Interna")"
-echo -e "\033[1;33m $(fun_trans "Ou seja, uma Porta no Seu Servidor Para o SSL")"
-echo -e "$barra"
-         while true; do
-         echo -ne "\033[1;37m"
-         read -p " Local-Port: " portx
-         if [[ ! -z $portx ]]; then
-             if [[ $(echo $portx|grep [0-9]) ]]; then
-                [[ $(mportas|grep $portx|head -1) ]] && break || echo -e "\033[1;31m $(fun_trans "Porta Invalida")"
-             fi
-         fi
-         done
-echo -e "$barra"
-DPORT="$(mportas|grep $portx|awk '{print $2}'|head -1)"
-echo -e "\033[1;33m $(fun_trans "Agora Presizamos Saber Qual Porta o SSL, Vai Escutar")"
-echo -e "$barra"
-    while true; do
-    read -p " Listen-SSL: " SSLPORT
-    [[ $(mportas|grep $SSLPORT) ]] || break
-    echo -e "\033[1;33m $(fun_trans "Poxa, esta Porta Ja esta em Uso")"
-    unset SSLPORT
-    done
-echo -e "$barra"
-echo -e "\033[1;33m $(fun_trans "Instalando SSL")"
-echo -e "$barra"
-fun_bar "apt-get install stunnel4 -y"
-echo -e "cert = /etc/stunnel/stunnel.pem\nclient = no\nsocket = a:SO_REUSEADDR=1\nsocket = l:TCP_NODELAY=1\nsocket = r:TCP_NODELAY=1\n\n[stunnel]\nconnect = 127.0.0.1:${DPORT}\naccept = ${SSLPORT}" > /etc/stunnel/stunnel.conf
-openssl genrsa -out key.pem 2048 > /dev/null 2>&1
-(echo br; echo br; echo uss; echo speed; echo adm; echo ultimate; echo @admultimate)|openssl req -new -x509 -key key.pem -out cert.pem -days 1095 > /dev/null 2>&1
-cat key.pem cert.pem >> /etc/stunnel/stunnel.pem
-sed -i 's/ENABLED=0/ENABLED=1/g' /etc/default/stunnel4
-service stunnel4 restart > /dev/null 2>&1
-echo -e "$barra"
-echo -e "\033[1;33m $(fun_trans "INSTALADO COM SUCESSO")"
-echo -e "$barra"
-return 0
-}
-
-#INSTALADOR SHADOW SOCKS
 fun_shadowsocks () {
 [[ -e /etc/shadowsocks.json ]] && {
 [[ $(ps x|grep ssserver|grep -v grep|awk '{print $1}') != "" ]] && kill -9 $(ps x|grep ssserver|grep -v grep|awk '{print $1}') > /dev/null 2>&1 && ssserver -c /etc/shadowsocks.json -d stop > /dev/null 2>&1
@@ -874,7 +816,30 @@ echo -e "${barra}\n ${value} ${cor[0]}\n${barra}"
 return 0
 }
 
-#INSTALADOR PROXY SOCKS
+telegran_bot () {
+if [[ "$(ps x | grep "ultimatebot" | grep -v "grep")" = "" ]]; then
+echo -e "${barra}"
+read -p " TELEGRAN BOT TOKEN: " tokenxx
+read -p " TELEGRAN BOT LOGUIN: " loguin
+read -p " TELEGRAN BOT PASS: " pass
+read -p " BOT LINGUAGE [pt/es/en/fr]: " lang
+echo -e "${barra}"
+echo -e "${loguin}:${pass}" > ./bottokens
+screen -dmS screen bash ./ultimatebot "$tokenxx" "$lang" > /dev/null 2>&1
+echo -e " LOADING BOT, WAIT"
+sleep 10s
+echo -e " RUNNING"
+echo -e "${barra}"
+else
+kill -9 $(ps x | grep "ultimatebot" | grep -v "grep" | awk '{print $1}') > /dev/null 2>&1
+[[ -e ./bottokens ]] && rm ./bottokens
+echo -e "${barra}"
+echo -e " BOT STOPED"
+echo -e "${barra}"
+fi
+return 0
+}
+
 iniciarsocks () {
 [[ -e /etc/adm-lite/sockson ]] && {
 echo -e "${barra}\n $(fun_trans "Parando Socks Python")\n${barra}"
@@ -919,7 +884,6 @@ echo -e "${barra}\n $(fun_trans "Procedimento Concluido")\n${barra}"
 return 0
 }
 
-#INSTALADOR PROXY GETTUN
 gettunel_fun () {
 [[ -e /etc/adm-lite/gettun ]] && {
 echo -e "${barra}\n $(fun_trans "PARANDO GETTUNEL")\n${barra}"
@@ -954,7 +918,6 @@ echo -e "$barra\n$(fun_trans "Gettunel nao foi iniciado")\n$barra"
  }
 }
 
-#INSTALADOR TCP OVER BYPASS
 tcpbypass_fun () {
 [[ -e /etc/adm-lite/edbypass ]] && {
 echo -e "$barra\n $(fun_trans "Parando Tcp Bypass")\n$barra"
@@ -980,32 +943,58 @@ echo -e "$barra\n $(fun_trans "Procedimento Concluido")\n$barra"
 return 0
 }
 
-#INSTALADOR TELEGRAN MANAGER BOT
-telegran_bot () {
-if [[ "$(ps x | grep "ultimatebot" | grep -v "grep")" = "" ]]; then
-echo -e "${barra}"
-read -p " TELEGRAN BOT TOKEN: " tokenxx
-read -p " TELEGRAN BOT LOGUIN: " loguin
-read -p " TELEGRAN BOT PASS: " pass
-read -p " BOT LINGUAGE [pt/es/en/fr]: " lang
-echo -e "${barra}"
-echo -e "${loguin}:${pass}" > ./bottokens
-screen -dmS screen bash ./ultimatebot "$tokenxx" "$lang" > /dev/null 2>&1
-echo -e " LOADING BOT, WAIT"
-sleep 10s
-echo -e " RUNNING"
-echo -e "${barra}"
-else
-kill -9 $(ps x | grep "ultimatebot" | grep -v "grep" | awk '{print $1}') > /dev/null 2>&1
-[[ -e ./bottokens ]] && rm ./bottokens
-echo -e "${barra}"
-echo -e " BOT STOPED"
-echo -e "${barra}"
-fi
+ssl_stunel () {
+[[ $(mportas|grep stunnel4|head -1) ]] && {
+echo -e "$barra"
+echo -e "\033[1;33m $(fun_trans "Parando Stunnel")"
+echo -e "$barra"
+fun_bar "apt-get purge stunnel4 -y"
+echo -e "$barra"
+echo -e "\033[1;33m $(fun_trans "Parado Com Sucesso!")"
+echo -e "$barra"
+return 0
+}
+echo -e "$barra"
+echo -e "\033[1;36m $(fun_trans "SSL Stunnel")"
+echo -e "$barra"
+echo -e "\033[1;33m $(fun_trans "Selecione Uma Porta De Redirecionamento Interna")"
+echo -e "\033[1;33m $(fun_trans "Ou seja, uma Porta no Seu Servidor Para o SSL")"
+echo -e "$barra"
+         while true; do
+         echo -ne "\033[1;37m"
+         read -p " Local-Port: " portx
+         if [[ ! -z $portx ]]; then
+             if [[ $(echo $portx|grep [0-9]) ]]; then
+                [[ $(mportas|grep $portx|head -1) ]] && break || echo -e "\033[1;31m $(fun_trans "Porta Invalida")"
+             fi
+         fi
+         done
+echo -e "$barra"
+DPORT="$(mportas|grep $portx|awk '{print $2}'|head -1)"
+echo -e "\033[1;33m $(fun_trans "Agora Presizamos Saber Qual Porta o SSL, Vai Escutar")"
+echo -e "$barra"
+    while true; do
+    read -p " Listen-SSL: " SSLPORT
+    [[ $(mportas|grep $SSLPORT) ]] || break
+    echo -e "\033[1;33m $(fun_trans "Poxa, esta Porta Ja esta em Uso")"
+    unset SSLPORT
+    done
+echo -e "$barra"
+echo -e "\033[1;33m $(fun_trans "Instalando SSL")"
+echo -e "$barra"
+fun_bar "apt-get install stunnel4 -y"
+echo -e "cert = /etc/stunnel/stunnel.pem\nclient = no\nsocket = a:SO_REUSEADDR=1\nsocket = l:TCP_NODELAY=1\nsocket = r:TCP_NODELAY=1\n\n[stunnel]\nconnect = 127.0.0.1:${DPORT}\naccept = ${SSLPORT}" > /etc/stunnel/stunnel.conf
+openssl genrsa -out key.pem 2048 > /dev/null 2>&1
+(echo br; echo br; echo uss; echo speed; echo adm; echo ultimate; echo @admultimate)|openssl req -new -x509 -key key.pem -out cert.pem -days 1095 > /dev/null 2>&1
+cat key.pem cert.pem >> /etc/stunnel/stunnel.pem
+sed -i 's/ENABLED=0/ENABLED=1/g' /etc/default/stunnel4
+service stunnel4 restart > /dev/null 2>&1
+echo -e "$barra"
+echo -e "\033[1;33m $(fun_trans "INSTALADO COM SUCESSO")"
+echo -e "$barra"
 return 0
 }
 
-#INSTALADOR PAINEL DE UPLOAD
 painel_upload () {
 echo -e "$barra"
 echo -e "${cor[2]}$(fun_trans "Deseja Instalar Painel De Upload?")"
