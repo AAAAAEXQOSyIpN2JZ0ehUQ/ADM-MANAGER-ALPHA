@@ -1,4 +1,5 @@
 ﻿# ADM-MANAGER-ULTIMATE
+# ESTE PROYECTO A SIDO DESCONTINUADO.--
 ```
 * UPDATE 25/03/2021 - Proyecto Finalizado
 ```
