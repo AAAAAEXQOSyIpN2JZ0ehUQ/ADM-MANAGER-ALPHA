@@ -2,6 +2,7 @@
 # ESTE PROYECTO A SIDO DESCONTINUADO.--
 ```
 * UPDATE 25/03/2021 - Proyecto Finalizado
+* ADM-Manager Ultimate Final Version ALPHA
 ```
 
 ![logo](https://github.com/AAAAAEXQOSyIpN2JZ0ehUQ/ADM-MANAGER-ALPHA/blob/main/Imagenes/ADM_MANAGER_ULTIMATE.png)
@@ -23,7 +24,7 @@ apt-get update -y; apt-get upgrade -y; wget https://raw.githubusercontent.com/AA
 
 ## :scroll: Registro de cambios
 
-**VERSION: ALPHA**
+**VERSION: 050824**
 
 https://raw.githubusercontent.com/AAAAAEXQOSyIpN2JZ0ehUQ/ADM-MANAGER-ALPHA/master/versao
 
