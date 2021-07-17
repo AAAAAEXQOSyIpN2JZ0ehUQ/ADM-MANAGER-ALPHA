@@ -23,8 +23,7 @@ apt-get update -y; apt-get upgrade -y; wget https://raw.githubusercontent.com/AA
 
 ```
 * Si da errores de taduccion (API Translation) ejecutar en consola el comando:  
-  echo "pt" > /etc/adm-lite/idioma_menuinst
-  rm -rf /etc/adm-lite/idioma
+  echo "pt" > /etc/adm-lite/idioma_menuinst && rm -rf /etc/adm-lite/idioma
 ```
 ```
 ADM-MANAGER (las dependencias faltantes se instalarán automáticamente)
