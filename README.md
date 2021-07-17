@@ -15,11 +15,20 @@
 * Recomendamos Ubuntu 14.04 Server x86_64 / Ubuntu 16.04 Server x86_64
 * Tambien puede funcionar en algunas versiones de  Debian Server x86_64
 * Se recomienda usar una distro nueva o formatiada
+* Idioma principal del Scripts es el Portugues (Recomendado)
 
 ## :book: Installation
 
 apt-get update -y; apt-get upgrade -y; wget https://raw.githubusercontent.com/AAAAAEXQOSyIpN2JZ0ehUQ/ADM-MANAGER-ALPHA/main/instala.sh; chmod 777 instala.sh* && ./instala.sh*
 
+```
+* Si te da errores de taduccion (API Translation) ejecute en consola el comando:  
+  echo "pt" > /etc/adm-lite/idioma_menuinst
+  rm -rf /etc/adm-lite/idioma
+```
+```
+ADM-MANAGER (las dependencias faltantes se instalarán automáticamente)
+```
 -------------------------------------------------------------------------------
 
 ## :scroll: Registro de cambios
