@@ -30,13 +30,13 @@ ADM-MANAGER (las dependencias faltantes se instalarán automáticamente)
 ```
 -------------------------------------------------------------------------------
 
-## :scroll: Registro de cambios
+## :scroll: Changelog
 
 **VERSION: 050824**
 
 https://raw.githubusercontent.com/AAAAAEXQOSyIpN2JZ0ehUQ/ADM-MANAGER-ALPHA/master/versao
 
-## :octocat: Contribute
+## :octocat: Credits
 
 1. @E8th4ver - Developer of Adm-Manager
 2. Team Illuminati - Contributor Update
