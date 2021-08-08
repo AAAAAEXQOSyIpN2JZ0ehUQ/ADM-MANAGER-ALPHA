@@ -1,7 +1,6 @@
 ﻿# ADM-MANAGER-ULTIMATE
-# ESTE PROYECTO A SIDO DESCONTINUADO.--
 ```
-* UPDATE 25/03/2021 - Proyecto Finalizado
+* UPDATE 25/03/2021 - Proyecto Descontinuado
 * ADM-Manager Ultimate (Final Version ADM-ALPHA)
 ```
 
