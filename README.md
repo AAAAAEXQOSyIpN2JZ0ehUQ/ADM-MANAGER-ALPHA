@@ -38,7 +38,7 @@ https://raw.githubusercontent.com/AAAAAEXQOSyIpN2JZ0ehUQ/ADM-MANAGER-ALPHA/maste
 ## :octocat: Credits
 
 1. @E8th4ver - Developer of Adm-Manager
-2. Team Illuminati - Contributor Update
+2. illuminati Dev Team - Contributor Update 
 
 ```
 * SIN MINERIA! 
