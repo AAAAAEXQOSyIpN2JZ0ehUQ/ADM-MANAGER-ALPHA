@@ -3,7 +3,6 @@
 * UPDATE 25/03/2021 - Proyecto Descontinuado
 * ADM-Manager Ultimate (Final Version ADM-ALPHA)
 ```
-
 ![logo](https://github.com/AAAAAEXQOSyIpN2JZ0ehUQ/ADM-MANAGER-ALPHA/blob/main/Imagenes/ADM_MANAGER_ULTIMATE.png)
 
 **Manager Script**
@@ -12,6 +11,7 @@
 
 * Un sistema operativo basado en Linux (Ubuntu o Debian) 
 * Ubuntu 14.04 Server x86_64 / Ubuntu 16.04 Server x86_64
+* Recomendamos Ubuntu 16.04 Server x86_64
 * Tambien puede funcionar en algunas versiones de  Debian Server x86_64
 * Se recomienda usar una distro nueva o formatiada
 * Idioma principal del Scripts es el Portugues (Recomendado)
