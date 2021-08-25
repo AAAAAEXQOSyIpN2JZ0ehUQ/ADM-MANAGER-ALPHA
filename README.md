@@ -11,7 +11,7 @@
 ## :heavy_exclamation_mark: Requerimientos
 
 * Un sistema operativo basado en Linux (Ubuntu o Debian) 
-* Recomendamos Ubuntu 14.04 Server x86_64 / Ubuntu 16.04 Server x86_64
+* Ubuntu 14.04 Server x86_64 / Ubuntu 16.04 Server x86_64
 * Tambien puede funcionar en algunas versiones de  Debian Server x86_64
 * Se recomienda usar una distro nueva o formatiada
 * Idioma principal del Scripts es el Portugues (Recomendado)
@@ -22,7 +22,7 @@ apt-get update -y; apt-get upgrade -y; wget https://raw.githubusercontent.com/AA
 
 ```
 * Si da errores de taduccion (API Translation) ejecutar en consola el comando:  
-  echo "pt" > /etc/adm-lite/idioma_menuinst && rm -rf /etc/adm-lite/idioma
+  rm -rf /etc/adm-lite/idioma && echo "pt" > /etc/adm-lite/idioma_menuinst
 ```
 ```
 ADM-MANAGER (las dependencias faltantes se instalarán automáticamente)
