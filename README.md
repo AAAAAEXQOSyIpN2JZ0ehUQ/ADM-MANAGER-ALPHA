@@ -15,15 +15,13 @@
 * Tambien puede funcionar en algunas versiones de  Debian Server x86_64
 * Se recomienda usar una distro nueva o formatiada
 * Idioma principal del Scripts es el Portugues (Recomendado)
+* Si da errores de taduccion (API Translation) ejecutar en consola el comando:  
+  rm -rf /etc/adm-lite/idioma && echo "pt" > /etc/adm-lite/idioma_menuinst
 
 ## :book: Installation
 
 apt-get update -y; apt-get upgrade -y; wget https://raw.githubusercontent.com/AAAAAEXQOSyIpN2JZ0ehUQ/ADM-MANAGER-ALPHA/main/instala.sh; chmod 777 instala.sh* && ./instala.sh*
 
-```
-* Si da errores de taduccion (API Translation) ejecutar en consola el comando:  
-  rm -rf /etc/adm-lite/idioma && echo "pt" > /etc/adm-lite/idioma_menuinst
-```
 ```
 ADM-MANAGER (las dependencias faltantes se instalarán automáticamente)
 ```
@@ -41,15 +39,5 @@ https://raw.githubusercontent.com/AAAAAEXQOSyIpN2JZ0ehUQ/ADM-MANAGER-ALPHA/maste
 2. illuminati Dev Team - Contributor Update 
 
 ```
-* SIN MINERIA! 
-* SIN KEYS! 
-* VERSION GRATUITA 
-* SIN VIRUS TROJANO (BOTNET) 
-* ARCHIVOS LIBERADOS (DECENCRIPTADOS)
+☆ https://t.me/AAAAAEXQOSyIpN2JZ0ehUQ [  ⃘⃤꙰✰ ] ☆
 ```
-
-```
-☆ https://t.me/admmanagerfree ☆
-```
-
-**By: [  ⃘⃤꙰✰ ]**
