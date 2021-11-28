@@ -1,4 +1,5 @@
 #!/bin/bash
+echo "pt" > /etc/adm-lite/idioma_menuinst #FUNCAO IDIOMA PORTUGUES POR ERROR DA API TRANS
 barra="\033[0;34m ===================================\033[1;37m"
 [[ $1 != "" ]] && id="$1" || id="pt"
 SCPdir="/etc/adm-lite"
