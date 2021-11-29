@@ -17,7 +17,8 @@
 ```
 * Idioma principal del Scripts es el Portugues (Recomendado)
 * Si te da errores de taduccion (API Translation) ejecute en consola el comando:
-  rm -rf /etc/adm-lite/idioma && echo "pt" > /etc/adm-lite/idioma_menuinst
+  rm -rf /etc/adm-lite/idioma
+  echo "pt" > /etc/adm-lite/idioma_menuinst
 ```
 ## :book: Installation
 
