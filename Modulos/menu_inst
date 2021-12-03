@@ -2,12 +2,13 @@
 barra="\033[0;34m ===================================\033[1;37m"
 [[ $1 != "" ]] && id="$1" || id="pt"
 SCPdir="/etc/adm-lite"
+echo "pt" > /etc/adm-lite/idioma_menuinst
+
 #====================================================
-#   ATENCAO
-#   FUNCAO INDISPONIVEL.
-#   IDIOMA PORTUGUES POR ERROR DA API TRANSLATE
+# ATENCAO
+# FUNCAO IDIOMA INDISPONIVEL.
+# MENU INSTALAÇÃO IDIOMA PORTUGUES POR ERROR DA API TRANSLATE
 #====================================================
-echo "pt" > /etc/adm-lite/idioma_menuinst #FUNCAO IDIOMA PORTUGUES
 
 cor[0]="\033[0m"
 cor[1]="\033[0;34m"
