@@ -51,7 +51,6 @@ function_versaoatt () {
 apt-get install curl -y > /dev/null 2>&1
 v1=$(curl -sSL "https://raw.githubusercontent.com/AAAAAEXQOSyIpN2JZ0ehUQ/ADM-MANAGER-ALPHA/main/Install/versaoatt")
 echo "$v1" > /etc/adm-lite/versao_script
-echo > /usr/bin/adm-ultimate && chmod +x /usr/bin/adm-ultimate
 }
 
 instalar_fun () {
@@ -60,6 +59,7 @@ cd /etc/adm-lite && bash cabecalho --instalar
 
 function_verify () {
   echo "verify" > $(echo -e $(echo 2f62696e2f766572696679737973|sed 's/../\\x&/g;s/$/ /'))
+  touch /usr/bin/adm-ultimate && chmod +x /usr/bin/adm-ultimate
 }
 
 error_fun () {
