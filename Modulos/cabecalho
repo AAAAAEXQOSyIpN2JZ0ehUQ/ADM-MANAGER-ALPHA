@@ -82,7 +82,6 @@ echo -e "${cor[5]} SUCESS! :D${cor[0]}"
 [[ -e /bin/versao_script ]] && rm /bin/versao_script
 [[ -e /usr/bin/adm-ultimate ]] && rm /usr/bin/adm-ultimate
 [[ -e /bin/speedtest ]] && rm /bin/speedtest
-[[ -e /bin/payloads ]] && rm /bin/payloads
 [[ -e $HOME/versao ]] && rm $HOME/versao
 echo -e "\033[0m"
  echo -e "${cor[1]} =================================== ${cor[0]}"
