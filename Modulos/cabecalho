@@ -74,6 +74,16 @@ fun_bar 'apt-get purge apache2' 'apt-get purge php5 libapache2-mod-php5 php5-mcr
 apt-get autoremove -y > /dev/null 2>&1
 echo -e "${cor[5]} SUCESS! :D${cor[0]}"
 [[ -e /etc/adm-lite ]] && rm -rf /etc/adm-lite
+[[ -e /bin/adm ]] && rm /bin/adm
+[[ -e /bin/menu ]] && rm /bin/menu
+[[ -e /bin/h ]] && rm /bin/h
+[[ -e /bin/trans ]] && rm /bin/trans
+[[ -e /bin/verifysys ]] && rm /bin/verifysys
+[[ -e /bin/versao_script ]] && rm /bin/versao_script
+[[ -e /usr/bin/adm-ultimate ]] && rm /usr/bin/adm-ultimate
+[[ -e /bin/speedtest ]] && rm /bin/speedtest
+[[ -e /bin/payloads ]] && rm /bin/payloads
+[[ -e $HOME/versao ]] && rm $HOME/versao
 echo -e "\033[0m"
  echo -e "${cor[1]} =================================== ${cor[0]}"
  exit
