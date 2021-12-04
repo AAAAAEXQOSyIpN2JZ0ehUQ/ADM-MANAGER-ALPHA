@@ -83,6 +83,8 @@ echo -e "${cor[5]} SUCESS! :D${cor[0]}"
 [[ -e /usr/bin/adm-ultimate ]] && rm /usr/bin/adm-ultimate
 [[ -e /bin/speedtest ]] && rm /bin/speedtest
 [[ -e $HOME/versao ]] && rm $HOME/versao
+service ssh restart
+service sshd restart
 echo -e "\033[0m"
  echo -e "${cor[1]} =================================== ${cor[0]}"
  exit
