@@ -58,8 +58,7 @@ cd /etc/adm-lite && bash cabecalho --instalar
 }
 
 function_verify () {
-  echo "verify" > $(echo -e $(echo 2f62696e2f766572696679737973|sed 's/../\\x&/g;s/$/ /'))
-  touch /usr/bin/adm-ultimate && chmod +x /usr/bin/adm-ultimate
+echo "verify" > $(echo -e $(echo 2f62696e2f766572696679737973|sed 's/../\\x&/g;s/$/ /'))
 }
 
 error_fun () {
@@ -103,6 +102,7 @@ echo -e "$barra"
 echo -e "${cor[2]} $(source trans -b pt:${id} "Use os Comandos"): menu, adm"
 echo -e "${cor[2]} $(source trans -b pt:${id} "e acesse o script, um bom uso!")"
 echo -e "$barra"
+touch /usr/bin/adm-ultimate
 echo -ne " \033[0m"
 }
 
