@@ -1,6 +1,6 @@
 ﻿# ADM-MANAGER-ULTIMATE
 ```
-* UPDATE 05/08/2021 - Proyecto Finalizado
+* UPDATE 30/01/2022 - Proyecto Finalizado
 * ADM-Manager Ultimate (Final Version ADM-ALPHA)
 ```
 ![logo](https://github.com/AAAAAEXQOSyIpN2JZ0ehUQ/ADM-MANAGER-ALPHA/blob/main/Imagenes/ADM_MANAGER_ULTIMATE.png)
