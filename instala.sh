@@ -122,7 +122,7 @@ clear
 echo -e "$barra"
 echo -e "${cor[2]}[ ADM - MANAGER - ULTIMATE ] \n$barra \n${cor[2]}[1]-PORTUGUESE-BR\n[2]-ENGLISH\n[3]-ESPANISH\n[4]-FRANCH"
 echo -e "$barra"
-echo -ne " OPCION: "; read -e -i 1 lang
+echo -ne " OPCION: "; read lang
 case $lang in
 1)
 id="pt"
