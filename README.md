@@ -1,6 +1,6 @@
 ﻿# ADM-MANAGER-ULTIMATE
 ```
-* UPDATE 25/03/2021 - Proyecto Finalizado
+* UPDATE 05/08/2021 - Proyecto Finalizado
 * ADM-Manager Ultimate (Final Version ADM-ALPHA)
 ```
 ![logo](https://github.com/AAAAAEXQOSyIpN2JZ0ehUQ/ADM-MANAGER-ALPHA/blob/main/Imagenes/ADM_MANAGER_ULTIMATE.png)
@@ -15,7 +15,6 @@
 * Tambien puede funcionar en algunas versiones de  Debian Server x86_64
 * Se recomienda usar una distro nueva o formatiada
 * Idioma principal del Scripts es el Portugues (Recomendado)
-* Para instalar el Painel De Upload [Ver Imagen](https://github.com/AAAAAEXQOSyIpN2JZ0ehUQ/ADM-MANAGER-ALPHA/blob/main/Imagenes/Painel%20De%20Upload.png)
 
 ## :book: Installation
 

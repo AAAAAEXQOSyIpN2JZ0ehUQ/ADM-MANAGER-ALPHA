@@ -79,6 +79,7 @@ ${am}Senha: ${ve}$var3
 ${am}LINK PAGINA INICIAL ${ve}( $ip:81 )
 ${az}-------------------------------------------------------------------${f}"
 echo -e "${am}"
+touch /etc/adm-lite/painelon > /dev/null 2>&1
 read -p "Aperte ENTER, Para continuar" naoa
 sleep 2
 echo -e "${f}"
