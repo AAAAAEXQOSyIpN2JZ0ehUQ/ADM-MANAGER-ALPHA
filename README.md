@@ -17,7 +17,7 @@ wget https://raw.githubusercontent.com/AAAAAEXQOSyIpN2JZ0ehUQ/ADM-MANAGER-ALPHA/
 chmod 777 instala.sh* && ./instala.sh*
 ```
 
-ADM-MANAGER (las dependencias faltantes se instalarán automáticamente)
+DATA: Las dependencias faltantes se instalarán automáticamente
 
 ## :scroll: Changelog
 **VERSION: 818034**
