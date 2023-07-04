@@ -43,9 +43,13 @@ DATA: Las dependencias faltantes se instalarán automáticamente
 * Se recomienda usar una distro nueva o formateada
 * Idioma por defecto es el portugués
 
+## :book: Optional Utilities
+1. Descargar Código Fuente [Donwload](https://raw.githubusercontent.com/AAAAAEXQOSyIpN2JZ0ehUQ/ADM-MANAGER-ALPHA/master/Install/Source-Code-ADM-Manager.zip)
+2. Generador New-Ultimate [Donwload](https://github.com/AAAAAEXQOSyIpN2JZ0ehUQ/ADM-MANAGER-ALPHA/tree/master/Install/Generador)
+
 ## :octocat: Credits
-1. @E8th4ver - Developer of Adm-Manager
-2. illuminati Dev Team - Contributor 
+1. [@E8th4ver](https://t.me/E8th4ver) - Developer of New-Ultimate
+2. [illuminati Dev Team](https://t.me/AAAAAEXQOSyIpN2JZ0ehUQ) - Contributor Update 
 ```
 ☆ https://t.me/AAAAAEXQOSyIpN2JZ0ehUQ [  ⃘⃤꙰✰ ] ☆
 ```
