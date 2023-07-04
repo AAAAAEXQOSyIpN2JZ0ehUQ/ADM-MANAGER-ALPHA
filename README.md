@@ -45,7 +45,7 @@ DATA: Las dependencias faltantes se instalarán automáticamente
 
 ## :book: Optional Utilities
 1. Descargar Código Fuente [Donwload](https://raw.githubusercontent.com/AAAAAEXQOSyIpN2JZ0ehUQ/ADM-MANAGER-ALPHA/master/Install/Source-Code-ADM-Manager.zip)
-2. Generador New-Ultimate [Donwload](https://github.com/AAAAAEXQOSyIpN2JZ0ehUQ/ADM-MANAGER-ALPHA/tree/master/Install/Generador)
+2. Generador ADM-Manager Ultimate [Donwload](https://github.com/AAAAAEXQOSyIpN2JZ0ehUQ/ADM-MANAGER-ALPHA/tree/master/Install/Generador)
 
 ## :octocat: Credits
 1. [@E8th4ver](https://t.me/E8th4ver) - Developer of New-Ultimate
