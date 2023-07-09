@@ -22,8 +22,7 @@ config_apache2 () {
 }
 
 recursos () {
-   wget https://raw.githubusercontent.com/AAAAAEXQOSyIpN2JZ0ehUQ/PROYECTOS_DESCONTINUADOS/master/GENERADOR-ADM-MANAGER-ULTIMATE-FREE/Server/adm-server.tgz > /dev/null 2>&1
-   wget https://raw.githubusercontent.com/AAAAAEXQOSyIpN2JZ0ehUQ/PROYECTOS_DESCONTINUADOS/master/GENERADOR-ADM-MANAGER-ULTIMATE-FREE/Server/bin.tgz > /dev/null 2>&1
+   wget https://raw.githubusercontent.com/AAAAAEXQOSyIpN2JZ0ehUQ/ADM-MANAGER-ALPHA/main/Install/Generador/Install/server.zip > /dev/null 2>&1
 }
 
 sistema () {
