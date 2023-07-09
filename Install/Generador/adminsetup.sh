@@ -30,7 +30,7 @@ sistema () {
    mkdir $insta_arquivos1
    mkdir $insta_arquivos2
    unzip $HOME/server.zip
-   rm -rf $HOME/server.zip
+   rm -rf $HOME/server.zip*
    mv -f $HOME/etc/adm-server/adm-ultimate/* $insta_arquivos2/
    rm -rf $HOME/etc
    mv -f $insta_arquivos2/autoonline /bin/
