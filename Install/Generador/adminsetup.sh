@@ -49,7 +49,7 @@ recursos
 echo -e "\033[1;36mINSTALANDO SISTEMA..."
 sistema
 echo -e "\033[1;32mINSTALAÇÃO CONCLUÍDA!"
-rm -rf $HOME/adminsetup.sh > /dev/null 2>&1
+rm -rf $HOME/adminsetup.sh* > /dev/null 2>&1
 echo ""
 echo -e "\033[1;33m  Perfecto, Utilice el comando \033[1;31mautoonline \033[0m"
 echo -e "\033[1;33m  para administrar sus claves y \033[0m"
