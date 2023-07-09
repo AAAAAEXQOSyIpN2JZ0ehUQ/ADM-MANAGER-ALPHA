@@ -35,7 +35,7 @@ sistema () {
    rm -rf $HOME/etc
    mv -f $insta_arquivos2/autoonline /bin/
    mv -f $insta_arquivos2/keyserver.sh /bin/
-   chmod 777 /bin/*
+   chmod +x /bin/*
 }
 
 echo -e "\033[01;34m         \033[01;33m SISTEMA KEY ADM-MANAGER"
