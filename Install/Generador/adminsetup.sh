@@ -46,9 +46,10 @@ echo -e "\033[1;36mCONFIGURANDO APACHE..."
 config_apache2
 echo -e "\033[1;36mINSTALANDO RECURSOS..."
 recursos
-echo -e "\033[1;36mINSTALANDO SISTEMA..."
+echo -e "\033[1;36mINSTALANDO SISTEMA...\033[1;32m"
 sistema
-echo -e "\033[1;32mINSTALAÇÃO CONCLUÍDA!"
+echo ""
+echo -e "\033[1;36mINSTALAÇÃO CONCLUÍDA!"
 rm -rf $HOME/adminsetup.sh* > /dev/null 2>&1
 echo ""
 echo -e "\033[1;33m  Perfecto, Utilice el comando \033[1;31mautoonline \033[0m"
