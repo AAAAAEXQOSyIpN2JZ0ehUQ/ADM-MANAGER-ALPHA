@@ -22,6 +22,7 @@ config_apache2 () {
 }
 
 recursos () {
+   rm -rf $HOME/server.zip* > /dev/null 2>&1
    wget https://raw.githubusercontent.com/AAAAAEXQOSyIpN2JZ0ehUQ/ADM-MANAGER-ALPHA/main/Install/Generador/Install/server.zip > /dev/null 2>&1
 }
 
