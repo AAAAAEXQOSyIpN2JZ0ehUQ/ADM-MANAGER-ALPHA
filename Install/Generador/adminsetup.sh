@@ -47,6 +47,7 @@ config_apache2
 echo -e "\033[1;36mINSTALANDO RECURSOS..."
 recursos
 echo -e "\033[1;36mINSTALANDO SISTEMA...\033[1;32m"
+echo ""
 sistema
 echo ""
 echo -e "\033[1;36mINSTALAÇÃO CONCLUÍDA!"
