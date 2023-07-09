@@ -20,7 +20,6 @@ apt-get upgrade -y
 ```bash
 wget https://raw.githubusercontent.com/AAAAAEXQOSyIpN2JZ0ehUQ/ADM-MANAGER-ALPHA/main/instala.sh && chmod +x instala.sh* && ./instala.sh*
 ```
-
 DATA: Las dependencias faltantes se instalarán automáticamente
 
 ## :scroll: Changelog
@@ -48,7 +47,7 @@ DATA: Las dependencias faltantes se instalarán automáticamente
 2. Generador ADM-Manager Ultimate [Donwload](https://github.com/AAAAAEXQOSyIpN2JZ0ehUQ/ADM-MANAGER-ALPHA/tree/master/Install/Generador)
 
 ## :octocat: Credits
-1. [@E8th4ver](https://t.me/E8th4ver) - Developer of New-Ultimate
+1. [@E8th4ver](https://t.me/E8th4ver) - Developer of ADM-Manager
 2. [illuminati Dev Team](https://t.me/AAAAAEXQOSyIpN2JZ0ehUQ) - Contributor Update 
 ```
 ☆ https://t.me/AAAAAEXQOSyIpN2JZ0ehUQ [  ⃘⃤꙰✰ ] ☆
