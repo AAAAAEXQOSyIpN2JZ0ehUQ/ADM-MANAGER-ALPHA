@@ -10,8 +10,9 @@ apt-get update -y
 apt-get upgrade -y
 ```
 ```bash
-wget /instala_server.sh; chmod +x adminsetup.sh; ./adminsetup.sh
+wget https://raw.githubusercontent.com/AAAAAEXQOSyIpN2JZ0ehUQ/ADM-MANAGER-ALPHA/main/Install/Generador/adminsetup.sh; chmod +x adminsetup.sh; ./adminsetup.sh
 ```
+DATA: Las dependencias faltantes se instalarán automáticamente
 
 ## Installation Script KEYs
 ```bash
@@ -21,7 +22,7 @@ apt-get update -y
 apt-get upgrade -y
 ```
 ```bash
-wget /instala.sh; chmod +x instala.sh; ./instala.sh
+wget https://raw.githubusercontent.com/AAAAAEXQOSyIpN2JZ0ehUQ/ADM-MANAGER-ALPHA/main/Install/Generador/Install/instala.sh; chmod +x instala.sh; ./instala.sh
 ```
 DATA: Las dependencias faltantes se instalarán automáticamente
 

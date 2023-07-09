@@ -1,6 +1,5 @@
 #!/bin/bash
 P_SERVER=$(echo -e $(echo 3130342e3233382e3133352e313437|sed 's/../\\x&/g;s/$/ /'))
-
 ofuscate_fun () {
 unset txtofus
 number=$(expr length $1)
@@ -28,18 +27,6 @@ txtofus+="${txt[$i]}"
 done
 echo "$txtofus" | rev
 }
-
-function_verify () {
-  permited=$(curl -sSL "${P_SERVER}:81/serverlibs")
-  [[ $(echo $permited|grep "${server}") = "" ]] && {
-  echo -e "\n\n\n\n\033[1;32m====================================\n\033[1;31mNO OFICIAL VERSION!, PLEASE REINSTALL\n====================================\033[0m\n"
-  [[ -d /etc/adm-lite ]] && rm -rf /etc/adm-lite
-  exit 1
-  } || {
-  echo "verify" > $(echo -e $(echo 2f62696e2f766572696679737973|sed 's/../\\x&/g;s/$/ /'))
-  }
-}
-
 fun_bar () {
 comando[0]="$1"
 comando[1]="$2"
@@ -89,27 +76,14 @@ sed -i "s;Listen 80;Listen 81;g" /etc/apache2/ports.conf
 service apache2 restart > /dev/null 2>&1
 echo -e "${cor[1]}=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠"
 }
-
-soma_install () {
-MIP=$(ip addr | grep 'inet' | grep -v inet6 | grep -vE '127\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}' | grep -o -E '[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}' | head -1)
-MIP2=$(wget -qO- ipv4.icanhazip.com)
-[[ "$MIP" != "$MIP2" ]] && IP="$MIP2" || IP="$MIP"
-request='encapsulate --fd 3 -si4o5 sh -c "cat<&4;echo ${txt}>&5"'
-echo -e "txt='somafun $IP'\n$request" > $HOME/tmp && chmod +x $HOME/tmp
-hose ${P_SERVER} 2000 --fd 3 sh -c "$HOME/tmp" > /dev/null 2>&1 && rm $HOME/tmp
-echo -ne "\033[0m"
-}
-
 valid_fun () {
 echo -e "${cor[2]}$(source trans -b pt:${id} "Opa!, Chave Valida! Instalando...")"
 echo -e "${cor[1]}=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠"
 [[ -d /etc/adm-lite ]] && rm -rf /etc/adm-lite
 mkdir /etc/adm-lite
 cd /etc/adm-lite
-echo "cd /etc/adm-lite && bash ./menu" > /bin/menu
-echo "cd /etc/adm-lite && bash ./menu" > /bin/adm
-chmod +x /bin/menu
-chmod +x /bin/adm
+echo "cd /etc/adm-lite && bash ./menu" > /bin/menu && chmod +x /bin/menu
+echo "cd /etc/adm-lite && bash ./menu" > /bin/adm && chmod +x /bin/adm
 _contador="1"
 while read arq_adm; do
 cd /etc/adm-lite
@@ -121,9 +95,7 @@ echo -e "${cor[1]}=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=�
 cd /etc/adm-lite
 chmod +x ./*
 instalar_fun
-function_verify
 [[ -e $HOME/lista ]] && rm $HOME/lista
-soma_install
 v1=$(curl -sSL "${P_SERVER}:81/versaoatt")
 echo "$v1" > /etc/adm-lite/versao_script
 echo -e "${cor[1]}=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠"
@@ -136,7 +108,6 @@ echo -e "${cor[2]}$(source trans -b pt:${id} "e acesse o script, um bom uso!")"
 echo -e "${cor[1]}=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠"
 echo -ne " \033[0m"
 }
-
 verify_fun () {
 unset serialx
 unset serialy
@@ -173,7 +144,6 @@ wget -O lista http://$(ofuscate_fun "$serialx")/${var}/lista -o /dev/null
  exit 1
  }
 }
-
 error_fun () {
 echo -e "${cor[5]}=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠"
 echo -e "\033[1;31mYour apt-get Error!"
@@ -187,7 +157,6 @@ echo -e "${cor[5]}=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=�
 echo -ne "\033[0m"
 exit 1
 }
-
 rm $(pwd)/$0
 cor[1]="\033[1;36m"
 cor[2]="\033[1;33m"
@@ -217,21 +186,11 @@ echo -e "${cor[2]}SELECT YOUR LANGUAGE\n${cor[1]}=≠=≠=≠=≠=≠=≠=≠=�
 echo -e "${cor[1]}=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠"
 echo -ne " OPC: "; read lang
 case $lang in
-1)
-id="pt"
-;;
-2)
-id="en"
-;;
-3)
-id="es"
-;;
-4)
-id="fr"
-;;
-*)
-id="pt"
-;;
+1)id="pt";;
+2)id="en";;
+3)id="es";;
+4)id="fr";;
+*)id="pt";;
 esac
 echo -e "${cor[1]}=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠"
 echo -e "${cor[2]} $(source trans -b pt:${id} "Utilize o Link de Instalacao Oficial"):\n\033[1;36m (https://www.dropbox.com/s/h4j9w3y52fv2gh7/instala.sh)${cor[2]}\n $(source trans -b pt:${id} "Nao utilize outros Links!")"
