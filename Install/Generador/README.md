@@ -11,7 +11,7 @@ apt-get upgrade -y
 ```
 ```bash
 wget /instala_server.sh; chmod +x adminsetup.sh; ./adminsetup.sh
-``
+```
 
 ## Installation Script KEYs
 ```bash
