@@ -38,6 +38,10 @@ sistema () {
    mv -f $insta_arquivos2/autoonline /bin/
    mv -f $insta_arquivos2/keyserver.sh /bin/
    chmod +x /bin/*
+   touch /var/www/html/liberados
+   touch /var/www/html/serverlibs
+   echo "24377" > /var/www/html/versaoatt
+
 }
 
 echo -e "\033[01;34m         \033[01;33m SISTEMA KEY ADM-MANAGER"
