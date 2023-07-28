@@ -13,6 +13,9 @@ repositorios () {
    apt-get install zip -y > /dev/null
    apt-get install unzip -y > /dev/null
    apt-get install screen -y > /dev/null
+   apt-get install netstat -y > /dev/null
+   apt-get install net-tools -y > /dev/null
+   apt-get install dos2unix -y > /dev/null
 }
 
 config_apache2 () {
