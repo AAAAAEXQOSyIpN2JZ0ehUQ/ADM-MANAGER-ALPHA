@@ -46,6 +46,15 @@ echo -e "${cor[2]} $text Apache2"
 fun_bar 'apt-get install lynx' 'apt-get install curl'
 sed -i "s;Listen 80;Listen 81;g" /etc/apache2/ports.conf
 service apache2 restart > /dev/null 2>&1
+#===================================
+echo -e "${cor[2]} $text nano"
+fun_bar 'apt-get install nano nload jq'
+echo -e "${cor[2]} $text netstat"
+fun_bar 'apt-get install netstat net-tools dos2unix'
+echo -e "${cor[2]} $text jq"
+fun_bar 'apt-get install python Python3 python-pip python3-pip'
+pip install speedtest-cli > /dev/null 2>&1
+#===================================
 }
     [[ "$1" = "--instalar" ]] && {
     instalar_fun
