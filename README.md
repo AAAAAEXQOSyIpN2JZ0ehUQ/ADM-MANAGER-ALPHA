@@ -4,10 +4,10 @@
 ```
 ![logo](https://github.com/AAAAAEXQOSyIpN2JZ0ehUQ/ADM-MANAGER-ALPHA/blob/main/Imagenes/ADM_MANAGER_ULTIMATE.png)
 
-# ADM-MANAGER-ULTIMATE
+# NEW-ULTIMATE MANAGER
 Es un script con un conjunto de características y herramientas adecuadas para 
 ofrecer extrema facilidad de manejo en servidores Linux con un enfoque en el uso de 
-VPN, tiene una interfaz agradable aportando información detallada sobre la maquina 
+VPN, tiene una interfaz agradable aportando información detallada sobre la máquina
 y los usuarios...
 
 ## :book: Installation
@@ -24,27 +24,27 @@ DATA: Las dependencias faltantes se instalarán automáticamente
 
 ## :scroll: Changelog
 **VERSION: 818034**
+* [Details](https://raw.githubusercontent.com/AAAAAEXQOSyIpN2JZ0ehUQ/ADM-MANAGER-ALPHA/main/versao)
 
 ## :book: How it works
-* SSH conexión
-* Conexiones Dropbear, SSLTunnel4, OpenVPN, etc
-* Elimina y crea usuarios
-* Monitor de conexión online
-* Detalles de tu sistema y usuarios
+* Conexiones SSH
+* Conexiones Dropbear, SSLTunnel4, OpenVPN, etc.
+* Creación y eliminación de usuarios
+* Monitoreo de conexiones en línea
+* Detalles del sistema y los usuarios
 * Herramientas de escaneo y búsqueda
-* Optimiza y limpia el sistema y más
+* Optimización y limpieza del sistema
 
 ## :heavy_exclamation_mark: Requirements
-* Un sistema operativo basado en Linux (Ubuntu o Debian)
-* Ubuntu 14.04 Server x86_64 / Ubuntu 16.04 Server x86_64
-* Debian 8 Server x86_64 / Debian 9 Server x86_64
+* Sistema operativo basado en Linux (Ubuntu o Debian)
+* Versiones recomendadas: Ubuntu 14.04 Server x86_64 / Ubuntu 16.04 Server x86_64 / Debian 8 Server x86_64 / Debian 9 Server x86_64
 * Recomendamos Ubuntu 16.04 Server x86_64
-* Se recomienda usar una distro nueva o formateada
-* Idioma por defecto es el portugués
+* Se sugiere utilizar una distribución reciente o recién formateada
+* El idioma predeterminado es el portugués
 
 ## :book: Optional Utilities
 1. Descargar Código Fuente [Donwload](https://raw.githubusercontent.com/AAAAAEXQOSyIpN2JZ0ehUQ/ADM-MANAGER-ALPHA/master/Install/Source-Code-ADM-Manager.zip)
-2. Generador ADM-Manager Ultimate [Donwload](https://github.com/AAAAAEXQOSyIpN2JZ0ehUQ/ADM-MANAGER-ALPHA/tree/master/Install/Generador)
+2. Generador ADM-Manager Ultimate [Details](https://github.com/AAAAAEXQOSyIpN2JZ0ehUQ/ADM-MANAGER-ALPHA/tree/master/Install/Generador)
 
 ## :octocat: Credits
 1. [@E8th4ver](https://t.me/E8th4ver) - Developer of ADM-Manager
