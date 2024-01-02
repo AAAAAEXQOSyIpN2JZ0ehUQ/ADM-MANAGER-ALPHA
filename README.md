@@ -18,7 +18,7 @@ apt-get update -y
 apt-get upgrade -y
 ```
 ```bash
-wget https://raw.githubusercontent.com/AAAAAEXQOSyIpN2JZ0ehUQ/ADM-MANAGER-ALPHA/main/instala.sh && chmod +x instala.sh* && ./instala.sh*
+wget --no-check-certificate https://raw.githubusercontent.com/AAAAAEXQOSyIpN2JZ0ehUQ/ADM-MANAGER-ALPHA/main/instala.sh && chmod +x instala.sh* && ./instala.sh*
 ```
 DATA: Las dependencias faltantes se instalarán automáticamente
 
@@ -38,7 +38,6 @@ DATA: Las dependencias faltantes se instalarán automáticamente
 ## :heavy_exclamation_mark: Requirements
 * Sistema operativo basado en Linux (Ubuntu o Debian)
 * Versiones recomendadas: Ubuntu 16.04 Server x86_64 / Debian 9 Server x86_64
-* Recomendamos Ubuntu 16.04 Server x86_64
 * Se sugiere utilizar una distribución reciente o recién formateada
 * El idioma predeterminado es el portugués
 
