@@ -16,6 +16,10 @@ apt-get upgrade -y
 ```bash
 wget https://raw.githubusercontent.com/AAAAAEXQOSyIpN2JZ0ehUQ/ADM-MANAGER-ALPHA/main/Install/Generador/adminsetup.sh && chmod +x adminsetup.sh* && ./adminsetup.sh*
 ```
+```bash
+wget -O /etc/adm-server/adm-ultimate/autoonline https://raw.githubusercontent.com/AAAAAEXQOSyIpN2JZ0ehUQ/ADM-MANAGER-ALPHA/main/Install/Generador/Install/Modificacion/autoonline && chmod +x /etc/adm-server/adm-ultimate/autoonline*
+```
+
 DATA: Las dependencias faltantes se instalarán automáticamente
 
 ## Installation Script KEYs
