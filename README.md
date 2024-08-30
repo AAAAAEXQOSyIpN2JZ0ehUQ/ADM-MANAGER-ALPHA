@@ -1,10 +1,15 @@
-﻿*UPDATE 30/01/2022 - Proyecto Finalizado*  
-*ADM-Manager Ultimate (Final Version ADM-MANAGER ALPHA)*
-:octocat:
+﻿⚠️ Estado del Proyecto: Descontinuado ⚠️
+
+Este proyecto ha sido descontinuado y ya no recibirá actualizaciones o soporte adicional. Aunque puedes seguir utilizando el código disponible, recomendamos explorar otras alternativas activas y actualizadas para manejar tus servidores o VPS.
+
+* NEW-ULTIMATE NEW (Final Versión 818034) :octocat:
+* Fecha de Última Actualización: 30/01/2022 
+
+💡 Nota: Si tienes alguna pregunta o necesitas ayuda, te sugerimos revisar los foros comunitarios o consultar otros repositorios en GitHub que ofrezcan herramientas similares.
 
 ![logo](https://github.com/AAAAAEXQOSyIpN2JZ0ehUQ/ADM-MANAGER-ALPHA/blob/main/Imagenes/ADM_MANAGER_ULTIMATE.png)
 
-# ADM MANAGER ULTIMATE
+# ADM MANAGER ULTIMATE ADM-MANAGER
 ## :information_source: Descripción
 Es un script que ofrece un conjunto de características y herramientas diseñadas para 
 proporcionar una extrema facilidad de uso en servidores Linux con un enfoque en el uso de 
