@@ -88,7 +88,7 @@ NEW-ULTIMATE NEW ofrece las siguientes características:
 | :page_facing_up: | versao         | Archivo de versión del proyecto           |
 
 ## :email: Contacto 
-* :busts_in_silhouette: **@E8th4ver**: [Telegram](https://t.me/E8th4ver) - Desarrollador  ADM-Ultimate New
+* :busts_in_silhouette: **@E8th4ver**: [Telegram](https://t.me/E8th4ver) - Desarrollador  ADM-Manager Ultimate
 * :busts_in_silhouette: **illuminati Dev Team**: [Grupo Oficial en Telegram](https://t.me/AAAAAEXQOSyIpN2JZ0ehUQ) - Actualización de versión
 * :busts_in_silhouette: **Jony Rivera**: [Telegram](https://t.me/Jony_Rivera) - Colaborador
 
