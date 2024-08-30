@@ -9,7 +9,7 @@ Este proyecto ha sido descontinuado y ya no recibirá actualizaciones o soporte 
 
 ![logo](https://github.com/AAAAAEXQOSyIpN2JZ0ehUQ/ADM-MANAGER-ALPHA/blob/main/Imagenes/ADM_MANAGER_ULTIMATE.png)
 
-# ADM MANAGER ULTIMATE ADM-MANAGER
+# ADM MANAGER ULTIMATE
 ## :information_source: Descripción
 Es un script que ofrece un conjunto de características y herramientas diseñadas para 
 proporcionar una extrema facilidad de uso en servidores Linux con un enfoque en el uso de 
