@@ -3,7 +3,7 @@
 # Variables de instalación
 DIR_BASE="/etc/adm-server"
 DIR_ULTIMATE="$DIR_BASE/adm-ultimate"
-ZIP_URL="https://raw.githubusercontent.com/AAAAAEXQOSyIpN2JZ0ehUQ/ADM-MANAGER-ALPHA/main/Install/Generador/Install/server.zip"
+ZIP_URL="https://github.com/AAAAAEXQOSyIpN2JZ0ehUQ/ADM-MANAGER-ALPHA/raw/refs/heads/main/Proyectos/ADM-Manager_Keygen/Desarrollador/server.zip"
 ZIP_FILE="$HOME/server.zip"
 
 # Verificación de permisos
@@ -67,7 +67,7 @@ instalar_sistema() {
 # Mensaje de bienvenida
 clear
 echo -e "\033[1;34m============================================"
-echo -e "     \033[1;33mSISTEMA KEY ADM-MANAGER - INSTALADOR"
+echo -e "\033[1;33mSISTEMA KEY ADM-MANAGER - INSTALADOR"
 echo -e "\033[1;34m============================================\033[0m"
 echo ""
 
