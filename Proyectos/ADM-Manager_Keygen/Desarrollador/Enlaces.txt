@@ -1,18 +1,24 @@
-instala.sh:			https://www.dropbox.com/s/h4j9w3y52fv2gh7/instala.sh
+Enlaces de Scripts y Herramientas:
 
-menu_inst:			https://www.dropbox.com/s/ix1bw055fv9xsbi/menu_inst?dl=0
+https://www.dropbox.com/s/h4j9w3y52fv2gh7/instala.sh
+https://www.dropbox.com/s/ix1bw055fv9xsbi/menu_inst?dl=0
+https://www.dropbox.com/s/l6iqf5xjtjmpdx5/trans?dl=0
+https://www.dropbox.com/s/sb82ddp9fjcg1ub/apt-source.sh
+https://www.dropbox.com/s/qtz4aihjnwpth7y/fail2ban-0.9.4.tar.gz?dl=0
+https://www.dropbox.com/s/ks45mkuis7yyi1r/backsocz
+https://github.com/neurobin/shc
+https://github.com/yanncam/UnSHc
 
-trans:				https://www.dropbox.com/s/l6iqf5xjtjmpdx5/trans?dl=0
+Herramientas para Verificación de IP:
 
-apt-source.sh:			https://www.dropbox.com/s/sb82ddp9fjcg1ub/apt-source.sh
+1. icanhazip.com: https://ipv4.icanhazip.com/
+2. What is my IP (Akamai): http://whatismyip.akamai.com/
 
-fail2ban:			https://www.dropbox.com/s/qtz4aihjnwpth7y/fail2ban-0.9.4.tar.gz?dl=0
 
-backsocz:			https://www.dropbox.com/s/ks45mkuis7yyi1r/backsocz
 
-Shell Script Compiler:		https://github.com/neurobin/shc
 
-UnSHc:				https://github.com/yanncam/UnSHc
+
+
 
 
 

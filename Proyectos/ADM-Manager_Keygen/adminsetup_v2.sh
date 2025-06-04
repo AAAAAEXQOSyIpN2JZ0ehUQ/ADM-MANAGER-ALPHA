@@ -60,7 +60,8 @@ instalar_sistema() {
     chmod +x /bin/autoonline /bin/keyserver.sh
 
     # Archivos para Apache
-    touch /var/www/html/liberados /var/www/html/serverlibs
+    touch /var/www/html/liberados 
+    touch /var/www/html/serverlibs
     echo "24377" > /var/www/html/versaoatt
 }
 
