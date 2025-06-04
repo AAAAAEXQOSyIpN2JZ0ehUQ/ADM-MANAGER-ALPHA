@@ -85,13 +85,14 @@ NEW-ULTIMATE NEW ofrece las siguientes características:
 | :file_folder:    | Imagenes       | Carpeta para imágenes                     |
 | :file_folder:    | Install        | Carpeta para scripts de instalación       |
 | :file_folder:    | Modulos        | Carpeta para módulos adicionales          |
+| :file_folder:    | Proyectos      | Carpeta de versiones del proyecto         |
 | :page_facing_up: | .gitattributes | Archivo para configuración de Git         |
 | :book:           | README.md      | Archivo de documentación principal        |
 | :package:        | instala.sh     | Instalador en Bash                        |
-| :page_facing_up: | versao         | Archivo de versión del proyecto           |
+| :page_facing_up: | credits        | Archivo de creditos del proyecto          |
 
 ## :email: Contacto 
-* :busts_in_silhouette: **@E8th4ver**: [Telegram](https://t.me/E8th4ver) - Desarrollador  ADM-Manager Ultimate
+* :busts_in_silhouette: **@E8th4ver**: [Telegram](https://t.me/E8th4ver) - Desarrollador  ADM Manager Ultimate
 * :busts_in_silhouette: **illuminati Dev Team**: [Telegram](https://t.me/AAAAAEXQOSyIpN2JZ0ehUQ) - Actualización de Repositorio
 
 ☆ https://t.me/AAAAAEXQOSyIpN2JZ0ehUQ ☆
