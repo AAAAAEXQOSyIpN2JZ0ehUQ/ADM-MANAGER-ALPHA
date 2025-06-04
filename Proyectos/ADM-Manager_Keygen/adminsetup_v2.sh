@@ -65,10 +65,9 @@ instalar_sistema() {
 }
 
 # Mensaje de bienvenida
-clear
-echo -e "\033[1;34m============================================"
+echo -e "\n\033[1;34m============================================"
 echo -e "\033[1;33mSISTEMA KEY ADM-MANAGER - INSTALADOR"
-echo -e "\033[1;34m============================================\033[0m"
+echo -e "\033[1;34m============================================"
 echo ""
 
 # Ejecución de funciones
@@ -80,7 +79,7 @@ instalar_sistema
 # Finalización
 echo ""
 echo -e "\033[1;32mInstalación completada con éxito!\033[0m"
-rm -f "$HOME/adminsetup.sh"
+[[ ! -e /etc/adm-server/credit ]] && echo "OFICIAL ADM-SERVER" > /etc/adm-server/credit
 echo ""
 echo -e "\033[1;33mUtilice el comando \033[1;31mautoonline\033[1;33m para administrar las claves."
 echo -e "También puede actualizar la base de servidores desde ahí.\033[0m"
