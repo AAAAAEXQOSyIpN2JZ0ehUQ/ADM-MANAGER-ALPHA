@@ -93,7 +93,7 @@ chmod +x ./*
 instalar_fun
 function_verify
 [[ -e $HOME/lista ]] && rm $HOME/lista
-wget -O $HOME/versao https://raw.githubusercontent.com/AAAAAEXQOSyIpN2JZ0ehUQ/ADM-MANAGER-ALPHA/master/versao  &> /dev/null
+wget -O $HOME/credits https://raw.githubusercontent.com/AAAAAEXQOSyIpN2JZ0ehUQ/ADM-MANAGER-ALPHA/master/credits  &> /dev/null
 echo -e "$barra"
 echo -e "${cor[5]} $(source trans -b pt:${id} "Perfeito Procedimento Feito com Sucesso!")"
 echo -e "$barra"

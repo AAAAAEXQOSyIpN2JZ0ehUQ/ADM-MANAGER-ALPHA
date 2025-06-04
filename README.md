@@ -1,15 +1,22 @@
-﻿⚠️ Estado del Proyecto: Descontinuado ⚠️
+﻿----
+
+⚠️ Estado del Proyecto: Descontinuado ⚠️
 
 Este proyecto ha sido descontinuado y ya no recibirá actualizaciones o soporte adicional. Aunque puedes seguir utilizando el código disponible, recomendamos explorar otras alternativas activas y actualizadas para manejar tus servidores o VPS.
 
-* NEW-ULTIMATE NEW (Final Versión 818034) :octocat:
-* Fecha de Última Actualización: 30/01/2022 
+* ADM Manager Ultimate (Final Versión 818034) :octocat:
+* Fecha de Última Actualización: 30/01/2022
 
-💡 Nota: Si tienes alguna pregunta o necesitas ayuda, te sugerimos revisar los foros comunitarios o consultar otros repositorios en GitHub que ofrezcan herramientas similares.
+Si tienes alguna pregunta o necesitas ayuda, te sugerimos revisar los foros de la comunidad o explorar otros repositorios en GitHub con herramientas similares. También puedes abrir un *issue* o enviar un *pull request* si deseas colaborar directamente.
+
+* :inbox_tray: Código Fuente: [Descargar](https://raw.githubusercontent.com/AAAAAEXQOSyIpN2JZ0ehUQ/ADM-MANAGER-ALPHA/master/Install/Source-Code-ADM-Manager.zip)
+
+----
 
 ![logo](https://github.com/AAAAAEXQOSyIpN2JZ0ehUQ/ADM-MANAGER-ALPHA/blob/main/Imagenes/ADM_MANAGER_ULTIMATE.png)
 
-# ADM MANAGER ULTIMATE
+# ADM Manager Ultimate
+
 ## :information_source: Descripción
 Es un script que ofrece un conjunto de características y herramientas diseñadas para 
 proporcionar una extrema facilidad de uso en servidores Linux con un enfoque en el uso de 
@@ -18,16 +25,16 @@ sus usuarios.
 
 ## :computer: Instalación
 ```bash
-apt-get update -y
-apt-get full-upgrade -y
+```bash
+apt-get update -y; 
+apt-get upgrade -y; 
 wget --no-check-certificate https://raw.githubusercontent.com/AAAAAEXQOSyIpN2JZ0ehUQ/ADM-MANAGER-ALPHA/main/instala.sh
-chmod +x instala.sh*
-./instala.sh*
+chmod +x instala.sh* && ./instala.sh
 ```
 
 ## :computer: Instalación en una Línea
 ```bash
-apt-get update -y; apt-get full-upgrade -y; wget --no-check-certificate https://raw.githubusercontent.com/AAAAAEXQOSyIpN2JZ0ehUQ/ADM-MANAGER-ALPHA/main/instala.sh; chmod +x instala.sh* && ./instala.sh*
+apt-get update -y; apt-get upgrade -y; wget --no-check-certificate https://raw.githubusercontent.com/AAAAAEXQOSyIpN2JZ0ehUQ/ADM-MANAGER-ALPHA/main/instala.sh; chmod +x instala.sh* && ./instala.sh
 ```
 
 :memo: Las dependencias faltantes se instalarán automáticamente durante el proceso.
@@ -63,17 +70,13 @@ NEW-ULTIMATE NEW ofrece las siguientes características:
 ## :hammer_and_wrench: Requisitos 
 
 - Sistema Operativo: Linux (Ubuntu o Debian)
-- Versiones Recomendadas: Ubuntu 16.04 Server x86_64 / Debian 9 Server x86_64
+- Versiones Recomendadas: Ubuntu 18.04 Server x86_64 / Debian 9 Server x86_64
 - Distribución: Se sugiere utilizar una distribución reciente o recién formateada.
 - Idioma Predeterminado: Portugués
 
 ## :file_folder: Proyectos útiles 
 
-- Generador de Key ADM-Ultimate New: [Ver Repositorio](https://github.com/AAAAAEXQOSyIpN2JZ0ehUQ/ADM-MANAGER-ALPHA/tree/master/Install/Generador)
-
-## :inbox_tray: Descarga del Código Fuente
-
-- Código Fuente: [Descargar](https://raw.githubusercontent.com/AAAAAEXQOSyIpN2JZ0ehUQ/ADM-MANAGER-ALPHA/master/Install/Source-Code-ADM-Manager.zip)
+- ADM Manager Ultimate Keygen: [Ver Repositorio](https://github.com/AAAAAEXQOSyIpN2JZ0ehUQ/ADM-MANAGER-ALPHA/tree/master/Install/Generador)
 
 ## :open_file_folder: Estructura del Repositorio
 
@@ -89,6 +92,6 @@ NEW-ULTIMATE NEW ofrece las siguientes características:
 
 ## :email: Contacto 
 * :busts_in_silhouette: **@E8th4ver**: [Telegram](https://t.me/E8th4ver) - Desarrollador  ADM-Manager Ultimate
-* :busts_in_silhouette: **illuminati Dev Team**: [Grupo](https://t.me/AAAAAEXQOSyIpN2JZ0ehUQ) - Actualización de versión
+* :busts_in_silhouette: **illuminati Dev Team**: [Telegram](https://t.me/AAAAAEXQOSyIpN2JZ0ehUQ) - Actualización de Repositorio
 
-☆ https://t.me/AAAAAEXQOSyIpN2JZ0ehUQ [  ⃘⃤꙰✰ ] ☆
+☆ https://t.me/AAAAAEXQOSyIpN2JZ0ehUQ ☆
