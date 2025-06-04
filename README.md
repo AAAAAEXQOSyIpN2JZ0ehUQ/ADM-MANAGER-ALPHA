@@ -51,7 +51,7 @@ menu
 ```
 
 ## :bookmark_tabs: Notas
-NEW-ULTIMATE NEW ofrece las siguientes características:
+ADM Manager Ultimate ofrece las siguientes características:
 
 - Conexiones SSH: Configura y administra conexiones SSH.
 - Conexiones VPN: Administra conexiones Dropbear, SSLTunnel4, OpenVPN, entre otras.
