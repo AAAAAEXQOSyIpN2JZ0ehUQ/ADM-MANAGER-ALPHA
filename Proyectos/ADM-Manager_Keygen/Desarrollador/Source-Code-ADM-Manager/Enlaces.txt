@@ -6,6 +6,11 @@ https://www.dropbox.com/s/l6iqf5xjtjmpdx5/trans?dl=0
 https://www.dropbox.com/s/sb82ddp9fjcg1ub/apt-source.sh
 https://www.dropbox.com/s/qtz4aihjnwpth7y/fail2ban-0.9.4.tar.gz?dl=0
 https://www.dropbox.com/s/ks45mkuis7yyi1r/backsocz
+https://www.dropbox.com/s/nxf5s1lffmbikwq/badvpn-udpgw
+https://www.dropbox.com/s/y2oxbunh9huwyb3/instala_server
+
+Herramientas para Ofuscar y desofuscar:
+
 https://github.com/neurobin/shc
 https://github.com/yanncam/UnSHc
 
