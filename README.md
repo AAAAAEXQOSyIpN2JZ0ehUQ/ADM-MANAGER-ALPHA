@@ -4,7 +4,7 @@
 
 Este proyecto ha sido descontinuado y ya no recibirá actualizaciones o soporte adicional. Aunque puedes seguir utilizando el código disponible, recomendamos explorar otras alternativas activas y actualizadas para manejar tus servidores o VPS.
 
-* ADM Manager Ultimate (Final Versión 818034) :octocat:
+* ADM Manager Ultimate (Final Versión 24377) :octocat:
 * Fecha de Última Actualización: 30/01/2022
 
 Si tienes alguna pregunta o necesitas ayuda, te sugerimos revisar los foros de la comunidad o explorar otros repositorios en GitHub con herramientas similares. También puedes abrir un *issue* o enviar un *pull request* si deseas colaborar directamente.
