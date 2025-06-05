@@ -27,8 +27,6 @@ instala_fun () {
 
     # Preparar sistema
     [[ -e "$insta_arquivos1" ]] && rm -rf "$insta_arquivos1"
-
-    mkdir -p "$insta_arquivos2"
     
     mkdir $insta_arquivos1
     mkdir $insta_arquivos2

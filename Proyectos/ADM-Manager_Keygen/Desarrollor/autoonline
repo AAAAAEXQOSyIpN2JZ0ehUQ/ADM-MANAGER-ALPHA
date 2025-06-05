@@ -1,0 +1,128 @@
+#!/bin/bash
+
+(
+base_bak="/etc/adm-server/adm-bak"
+base_adm="/etc/adm-server/adm-ultimate"
+# Revisar si hay menos de 30 archivos en base_adm
+[[ $(ls ${base_adm} 2>/dev/null | wc -l) -lt "30" ]] && {
+  # Si base_bak existe, copiar sus archivos a base_adm
+  if [[ -d ${base_bak} ]]; then
+    cp ${base_bak}/* ${base_adm}
+  fi
+}
+) &
+
+meu_ip () {
+  MIP=$(ip addr | grep 'inet' | grep -v inet6 | grep -vE '127\.' | grep -o -E '[0-9]+\.[0-9]+\.[0-9]+\.[0-9]+' | head -1)
+  MIP2=$(wget -qO- ipv4.icanhazip.com)
+  [[ "$MIP" != "$MIP2" ]] && IP="$MIP2" || IP="$MIP"
+}
+
+ofuscate_fun () {
+  number=$(expr length $1)
+  txtofus=""
+  for ((i=1; i<=number; i++)); do
+    c=$(echo "$1" | cut -b $i)
+    case "$c" in
+      ".") c="#" ;;
+      "#") c="." ;;
+      "1") c="@" ;;
+      "@") c="1" ;;
+      "2") c="?" ;;
+      "?") c="2" ;;
+      "3") c="&" ;;
+      "&") c="3" ;;
+    esac
+    txtofus+="$c"
+  done
+  obfus=$(echo $txtofus | rev)
+}
+
+dirkey="/etc/adm-server/keys"
+[[ ! -e /etc/adm-server/credit ]] && echo "OFICIAL ADM-SERVER" > /etc/adm-server/credit
+[[ ! -d $dirkey ]] && mkdir -p $dirkey
+
+atualiza_fun () {
+  cd $HOME
+  wget -q https://www.dropbox.com/s/y2oxbunh9huwyb3/instala_server -O instala_server
+  chmod 777 ./instala_server
+  ./instala_server
+}
+
+unset theserver
+theserver=$(netstat -nltp 2>/dev/null | grep faucet)
+[[ $theserver = "" ]] && theserver="\033[1;31m offline" || theserver="\033[1;32m online"
+
+amarelo="\033[1;33m"
+verde="\033[1;32m"
+vermelho="\033[1;31m"
+branco="\033[1;37m"
+
+clear
+echo -e "\033[1;36m========================================\033[1;37m"
+echo -e "${vermelho}|1| - ${amarelo}criar key"
+echo -e "${vermelho}|2| - ${amarelo}status key"
+echo -e "${vermelho}|3| - ${amarelo}remover key"
+echo -ne "${vermelho}|4| - ${amarelo}iniciar/parar sistema"; echo -e " (${theserver} ${amarelo})"
+echo -e "${vermelho}|5| - ${amarelo}Creditos!"
+echo -e "${vermelho}|6| - ${amarelo}Atualizar!"
+echo -e "\033[1;36m========================================\033[1;37m"
+echo -ne "Opcoes: "; read options
+
+meu_ip
+ofuscate_fun "${IP}:81"
+
+case $options in
+1)
+  echo -ne "${vermelho}Nome do Dono da Key:${branco} "; read name
+  echo -ne "${vermelho}Quantidade Keys:${branco} "; read num
+  echo -e "${amarelo}GENERANDO...${verde}"
+  for ((k=0; k<num; k++)); do
+    arch="$((100*RANDOM*RANDOM+RANDOM))"
+    echo "$name" > ${dirkey}/${arch}
+    echo "${obfus}+${arch}"
+  done
+  echo -e "${amarelo}GERADAS..."
+  ;;
+2)
+  numkey="$(ls ${dirkey} 2>/dev/null | wc -l)"
+  echo -ne "${amarelo}Numero de Keys Ativas: "; echo -e "${vermelho}$numkey"
+  [[ "$numkey" = "0" ]] && exit
+  for keys in $(ls ${dirkey}); do
+    dono=$(cat ${dirkey}/${keys} 2>/dev/null | head -1)
+    key+="$dono|${obfus}+${keys}\n"
+  done
+  for i in $(echo -e "${key}" | sort); do
+    usuario=$(echo "$i" | cut -d'|' -f1)
+    chave=$(echo "$i" | cut -d'|' -f2)
+    echo -e "${amarelo}Usuario: ${vermelho}$usuario ${amarelo}Key: ${vermelho}$chave"
+  done
+  ;;
+3)
+  i=0
+  echo -ne "${amarelo}"
+  for arqs in $(ls ${dirkey}); do
+    rm[$i]="$arqs"
+    echo -e "[$i] - ${obfus}+${arqs}"
+    i=$((i+1))
+  done
+  echo -ne "${vermelho}Escolha a key a ser removida: ${branco}"; read remo
+  [[ "$remo" != "" && "$remo" -lt "$i" ]] && rm -f "${dirkey}/${rm[$remo]}"
+  ;;
+4)
+  if [[ $(netstat -nltp 2>/dev/null | grep faucet) = "" ]]; then
+    keyserver.sh -start "/bin/keyserver.sh"
+  else
+    killall faucet
+  fi
+  ;;
+5)
+  echo -ne "${amarelo}Novo cr�dito: ${branco}"; read newcredit
+  echo "$newcredit" > /etc/adm-server/credit
+  ;;
+6)
+  atualiza_fun
+  ;;
+esac
+echo -ne "\033[0m"
+exit
