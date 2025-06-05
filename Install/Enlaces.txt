@@ -15,8 +15,8 @@ Enlaces de Scripts y Herramientas:
 
 Herramientas para Ofuscar y desofuscar:
 
-https://github.com/neurobin/shc
-https://github.com/yanncam/UnSHc
+1. https://github.com/neurobin/shc
+2. https://github.com/yanncam/UnSHc
 
 Herramientas para Verificación de IP:
 
