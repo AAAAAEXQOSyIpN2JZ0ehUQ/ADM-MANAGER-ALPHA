@@ -4,8 +4,8 @@
 
 apt-get update -y
 apt-get upgrade -y
-wget https://raw.githubusercontent.com/AAAAAEXQOSyIpN2JZ0ehUQ/ADM-MANAGER-ALPHA/main/Install/Generador/adminsetup.sh; 
-chmod +x adminsetup.sh* && ./adminsetup.sh
+wget https://raw.githubusercontent.com/AAAAAEXQOSyIpN2JZ0ehUQ/ADM-MANAGER-ALPHA/refs/heads/main/Proyectos/ADM-Manager_Keygen/adminsetup_v1.sh; 
+chmod +x adminsetup_v1.sh* && ./adminsetup_v1.sh
 
 wget -O /etc/adm-server/adm-ultimate/autoonline https://raw.githubusercontent.com/AAAAAEXQOSyIpN2JZ0ehUQ/ADM-MANAGER-ALPHA/main/Install/Generador/Install/Modificacion/autoonline && chmod +x /etc/adm-server/adm-ultimate/autoonline*
 
@@ -15,3 +15,5 @@ wget --no-check-certificate https://raw.githubusercontent.com/AAAAAEXQOSyIpN2JZ0
 * GENERADOR ADM-MANAGER ULTIMATE (Final Version 24377)
 
 https://raw.githubusercontent.com/AAAAAEXQOSyIpN2JZ0ehUQ/ADM-MANAGER-ALPHA/main/Install/Generador/versao
+
+
