@@ -59,9 +59,14 @@ instalar_sistema() {
     mv -f "$DIR_ULTIMATE/keyserver.sh" /bin/
     chmod +x /bin/autoonline /bin/keyserver.sh
 
-    # Archivos para Apache
-    touch /var/www/html/liberados 
+    # Archivos de creditos por defecto
+    [[ ! -e /etc/adm-server/credit ]] && echo "OFICIAL ADM-SERVER" > /etc/adm-server/credits
+
+    # Archivos para servidor principal
+    touch /var/www/html/liberados
     touch /var/www/html/serverlibs
+
+    # Archivos para servidor principal version
     echo "24377" > /var/www/html/versaoatt
 }
 
@@ -80,7 +85,6 @@ instalar_sistema
 # Finalización
 echo ""
 echo -e "\033[1;32mInstalación completada con éxito!\033[0m"
-[[ ! -e /etc/adm-server/credit ]] && echo "OFICIAL ADM-SERVER" > /etc/adm-server/credit
 echo ""
 echo -e "\033[1;33mUtilice el comando \033[1;31mautoonline\033[1;33m para administrar las claves."
 echo -e "También puede actualizar la base de servidores desde ahí.\033[0m"
