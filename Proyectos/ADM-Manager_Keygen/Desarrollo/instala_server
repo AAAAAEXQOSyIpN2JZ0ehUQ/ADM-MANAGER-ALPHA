@@ -1,0 +1,77 @@
+#!/bin/bash
+
+# Directorios de instalación
+insta_arquivos1="/etc/adm-server"
+insta_arquivos2="/etc/adm-server/adm-ultimate"
+
+# Colores para impresión
+#===============================#
+cor[1]="\033[1;36m"
+cor[2]="\033[1;33m"
+cor[3]="\033[1;31m"
+cor[4]="\033[0m"
+#===============================#
+
+# Instalación principal
+instala_fun () {
+    echo -e "${cor[2]}OK! Instalando sistema..."
+    echo -e "${cor[1]}=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠"
+
+    apt-get update -y > /dev/null
+    apt-get install -y zip unzip screen > /dev/null
+    apt-get install apache2 -y > /dev/null 2>&1
+
+    # Configura Apache
+    sed -i "s;Listen 80;Listen 81;g" /etc/apache2/ports.conf
+    service apache2 restart > /dev/null 2>&1
+
+    # Preparar sistema
+    [[ -e "$insta_arquivos1" ]] && rm -rf "$insta_arquivos1"
+
+    mkdir -p "$insta_arquivos2"
+    
+    mkdir $insta_arquivos1
+    mkdir $insta_arquivos2
+
+    unzip -o "$HOME/server.zip" -d "$HOME" > /dev/null
+    rm -f "$HOME/server.zip"
+
+    mv -f "$HOME/etc/adm-server/adm-ultimate/"* "$insta_arquivos2/"
+    rm -rf "$HOME/etc"
+
+    mv -f "$insta_arquivos2/autoonline" /bin/
+    mv -f "$insta_arquivos2/keyserver.sh" /bin/
+    chmod +x /bin/autoonline
+    chmod +x /bin/keyserver.sh
+
+    echo -e "${cor[1]}=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠"
+    echo -e "${cor[2]} Perfeito! Use o comando \033[1;31mautoonline${cor[2]}"
+    echo -e " para gerenciar suas keys e"
+    echo -e " atualizar a base do servidor."
+    echo -e "${cor[1]}=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠\033[0m"
+}
+
+# Baixando diretamente os arquivos
+verify_fun () {
+cd $HOME
+echo -e "${cor[2]}Baixando arquivos de instalação...\033[0m"
+wget -q https://github.com/AAAAAEXQOSyIpN2JZ0ehUQ/ADM-MANAGER-ALPHA/raw/refs/heads/main/Proyectos/ADM-Manager_Keygen/Desarrollador/server.zip -O "$HOME/server.zip"
+
+if [[ -e "$HOME/server.zip" ]]; then
+    instala_fun
+else
+    echo -e "${cor[3]}Falha ao baixar os arquivos. Verifique sua conexão.\033[0m"
+    exit 1
+fi  
+}
+
+# Início
+echo -e "\n${cor[1]}=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠"
+echo -e "${cor[3]} INSTALADOR ADM-SCRIPTS ®"
+echo -e "${cor[1]}=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠"
+echo -e "${cor[3]} Iniciando Instalação..."
+echo -e "${cor[1]}=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠"
+echo -ne "${cor[4]}"
+verify_fun
+
+exit 0

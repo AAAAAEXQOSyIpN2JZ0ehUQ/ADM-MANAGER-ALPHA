@@ -68,6 +68,10 @@ instalar_sistema() {
 
     # Archivos para servidor principal version
     echo "24377" > /var/www/html/versaoatt
+
+    # Archivos para respaldos
+    mkdir "/etc/adm-server/adm-bak"
+    cp /etc/adm-server/adm-ultimate/* /etc/adm-server/adm-bak
 }
 
 # Mensaje de bienvenida
