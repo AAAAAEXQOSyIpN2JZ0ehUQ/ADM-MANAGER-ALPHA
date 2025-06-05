@@ -4,7 +4,8 @@
 
 apt-get update -y
 apt-get upgrade -y
-wget https://raw.githubusercontent.com/AAAAAEXQOSyIpN2JZ0ehUQ/ADM-MANAGER-ALPHA/main/Install/Generador/adminsetup.sh && chmod +x adminsetup.sh* && ./adminsetup.sh*
+wget https://raw.githubusercontent.com/AAAAAEXQOSyIpN2JZ0ehUQ/ADM-MANAGER-ALPHA/main/Install/Generador/adminsetup.sh; 
+chmod +x adminsetup.sh* && ./adminsetup.sh
 
 wget -O /etc/adm-server/adm-ultimate/autoonline https://raw.githubusercontent.com/AAAAAEXQOSyIpN2JZ0ehUQ/ADM-MANAGER-ALPHA/main/Install/Generador/Install/Modificacion/autoonline && chmod +x /etc/adm-server/adm-ultimate/autoonline*
 
