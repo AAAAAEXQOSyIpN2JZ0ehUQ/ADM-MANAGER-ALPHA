@@ -1,0 +1,25 @@
+Enlaces de Scripts y Herramientas:
+
+https://www.dropbox.com/s/h4j9w3y52fv2gh7/instala.sh
+https://www.dropbox.com/s/ix1bw055fv9xsbi/menu_inst?dl=0
+https://www.dropbox.com/s/l6iqf5xjtjmpdx5/trans?dl=0
+https://www.dropbox.com/s/sb82ddp9fjcg1ub/apt-source.sh
+https://www.dropbox.com/s/qtz4aihjnwpth7y/fail2ban-0.9.4.tar.gz?dl=0
+https://www.dropbox.com/s/ks45mkuis7yyi1r/backsocz
+https://github.com/neurobin/shc
+https://github.com/yanncam/UnSHc
+
+Herramientas para Verificación de IP:
+
+1. icanhazip.com: https://ipv4.icanhazip.com/
+2. What is my IP (Akamai): http://whatismyip.akamai.com/
+
+
+
+
+
+
+
+
+
+

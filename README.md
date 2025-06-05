@@ -25,7 +25,6 @@ sus usuarios.
 
 ## :computer: Instalación
 ```bash
-```bash
 apt-get update -y; 
 apt-get upgrade -y; 
 wget --no-check-certificate https://raw.githubusercontent.com/AAAAAEXQOSyIpN2JZ0ehUQ/ADM-MANAGER-ALPHA/main/instala.sh
