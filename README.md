@@ -77,7 +77,7 @@ ADM Manager Ultimate ofrece las siguientes características:
 
 **Principal**
 
-- ADM Manager Ultimate Keygen: [Ver Repositorio](https://github.com/AAAAAEXQOSyIpN2JZ0ehUQ/ADM-MANAGER-ALPHA/tree/master/Install/Generador)
+- ADM Manager Ultimate Keygen: [Ver Repositorio](https://github.com/AAAAAEXQOSyIpN2JZ0ehUQ/ADM-MANAGER-ALPHA/tree/main/Proyectos/ADM-Manager_Keygen)
 
 ## :open_file_folder: Estructura del Repositorio
 
