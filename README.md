@@ -33,7 +33,7 @@ chmod +x instala.sh* && ./instala.sh
 
 ## :computer: Instalación en una Línea (Solo script)
 ```bash
-apt-get update -y; apt-get upgrade -y; wget --no-check-certificate https://raw.githubusercontent.com/AAAAAEXQOSyIpN2JZ0ehUQ/ADM-MANAGER-ALPHA/main/instala.sh; chmod +x instala.sh* && ./instala.sh
+wget --no-check-certificate https://raw.githubusercontent.com/AAAAAEXQOSyIpN2JZ0ehUQ/ADM-MANAGER-ALPHA/main/instala.sh; chmod +x instala.sh* && ./instala.sh
 ```
 
 :memo: Las dependencias faltantes se instalarán automáticamente durante el proceso.
@@ -90,6 +90,7 @@ ADM Manager Ultimate ofrece las siguientes características:
 | :page_facing_up: | .gitattributes | Archivo para configuración de Git         |
 | :book:           | README.md      | Archivo de documentación principal        |
 | :package:        | instala.sh     | Instalador en Bash                        |
+| :package:        | instala_v2.sh  | Instalador en Bash alternativa            |
 | :page_facing_up: | credits        | Archivo de creditos del proyecto          |
 
 ## :email: Contacto 
