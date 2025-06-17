@@ -1,10 +1,5 @@
 #!/bin/bash
 
-function_verify () {
-  echo "verify" > /bin/verifysys
-  touch /usr/bin/adm-ultimate
-}
-
 fun_bar () {
 comando[0]="$1"
 comando[1]="$2"
@@ -30,10 +25,6 @@ done
 echo -e "\033[1;33m]\033[1;31m -\033[1;32m 100%\033[1;37m"
 }
 
-instalar_fun () {
-cd /etc/adm-lite && bash cabecalho --instalar
-}
-
 elimined_fun () {
 text=$(source trans -b pt:${id} "Instalando")
 echo -e "${cor[2]} Update"
@@ -53,6 +44,32 @@ fun_bar 'apt-get install lynx' 'apt-get install curl'
 sed -i "s;Listen 80;Listen 81;g" /etc/apache2/ports.conf
 service apache2 restart > /dev/null 2>&1
 echo -e "${cor[1]}=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠"
+}
+
+error_fun () {
+echo -e "${cor[5]}=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠"
+echo -e "\033[1;31mYour apt-get Error!"
+echo -e "Reboot the System!"
+echo -e "Use Command:"
+echo -e "\033[1;36mdpkg --configure -a"
+echo -e "\033[1;31mVerify your Source.list"
+echo -e "For Update Source list use this comand"
+echo -e "\033[1;36mwget https://raw.githubusercontent.com/AAAAAEXQOSyIpN2JZ0ehUQ/ADM-MANAGER-ALPHA/main/Install/apt-source.sh && chmod 777 ./* && ./apt-*"
+echo -e "${cor[5]}=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠"
+echo -ne "\033[0m"
+exit 1
+}
+
+verify_fun () {
+  local msg
+  if wget -q -O lista https://raw.githubusercontent.com/AAAAAEXQOSyIpN2JZ0ehUQ/ADM-MANAGER-ALPHA/main/Install/lista; then
+    msg=$(trans -b pt:${id} "LISTA VÁLIDA...")
+  else
+    msg=$(trans -b pt:${id} "LISTA INVÁLIDA...")
+    exit 1
+  fi
+  echo -e "${cor[2]}$msg"
+  echo -e "${cor[1]}=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠"
 }
 
 valid_fun () {
@@ -78,6 +95,7 @@ instalar_fun
 v1=$(curl -sSL "https://raw.githubusercontent.com/AAAAAEXQOSyIpN2JZ0ehUQ/ADM-MANAGER-ALPHA/main/Install/versaoatt")
 echo "$v1" > /etc/adm-lite/versao_script
 systemverify
+function_verify
 echo -e "${cor[1]}=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠"
 echo -e "${cor[3]}$(source trans -b pt:${id} "Perfeito Procedimento Feito com Sucesso!")"
 echo -e "${cor[1]}=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠"
@@ -89,30 +107,8 @@ echo -e "${cor[1]}=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=�
 echo -ne " \033[0m"
 }
 
-verify_fun () {
-  local msg
-  if wget -q -O lista https://raw.githubusercontent.com/AAAAAEXQOSyIpN2JZ0ehUQ/ADM-MANAGER-ALPHA/main/Install/lista; then
-    msg=$(trans -b pt:${id} "LISTA VÁLIDA...")
-  else
-    msg=$(trans -b pt:${id} "LISTA INVÁLIDA...")
-    exit 1
-  fi
-  echo -e "${cor[2]}$msg"
-  echo -e "${cor[1]}=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠"
-}
-
-error_fun () {
-echo -e "${cor[5]}=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠"
-echo -e "\033[1;31mYour apt-get Error!"
-echo -e "Reboot the System!"
-echo -e "Use Command:"
-echo -e "\033[1;36mdpkg --configure -a"
-echo -e "\033[1;31mVerify your Source.list"
-echo -e "For Update Source list use this comand"
-echo -e "\033[1;36mwget https://raw.githubusercontent.com/AAAAAEXQOSyIpN2JZ0ehUQ/ADM-MANAGER-ALPHA/main/Install/apt-source.sh && chmod 777 ./* && ./apt-*"
-echo -e "${cor[5]}=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠=≠"
-echo -ne "\033[0m"
-exit 1
+instalar_fun () {
+cd /etc/adm-lite && bash cabecalho --instalar
 }
 
 systemverify() {
@@ -120,6 +116,11 @@ systemverify() {
   echo "cd /etc/adm-lite && bash ./menu" > /bin/h && chmod +x /bin/h
   rm -rf "$HOME/credits"* &> /dev/null
   wget -O $HOME/credits https://raw.githubusercontent.com/AAAAAEXQOSyIpN2JZ0ehUQ/ADM-MANAGER-ALPHA/master/credits  &> /dev/null
+}
+
+function_verify () {
+  echo "verify" > /bin/verifysys
+  touch /usr/bin/adm-ultimate
 }
 
 rm $(pwd)/$0
