@@ -23,6 +23,11 @@ proporcionar una extrema facilidad de uso en servidores Linux con un enfoque en 
 VPN. Viene con una interfaz amigable que proporciona información detallada sobre el servidor y 
 sus usuarios.
 
+### 2. **ADM-Ultimate New**  
+Autor original: [@E8th4ver](https://t.me/E8th4ver) 
+- 📢 Canal oficial: [https://t.me/e8th4ever](https://t.me/e8th4ever)  
+- 💬 Grupo de soporte: [ ]( )
+
 ## :computer: Instalación
 ```bash
 apt-get update -y; 
